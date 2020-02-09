@@ -3,8 +3,8 @@ package mlk.hanif.resumeBuilder.model;
 import lombok.Data;
 
 @Data
-public class Projects {
+public class Language {
     private String title;
-    private String description;
-    private String website;
+    private String level;
+    private String certificate;
 }

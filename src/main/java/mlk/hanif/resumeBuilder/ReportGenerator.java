@@ -79,9 +79,9 @@ public class ReportGenerator {
         try {
             Path path = Paths.get(outputFileName);
             path.getParent().toFile().mkdirs();
-//            if(!path.toFile().exists()){
-            Files.createFile(path);
-//            }
+            if (!path.toFile().exists()) {
+                Files.createFile(path);
+            }
             Files.write(path, writer.toString().getBytes());
         } catch (IOException e) {
             e.printStackTrace();

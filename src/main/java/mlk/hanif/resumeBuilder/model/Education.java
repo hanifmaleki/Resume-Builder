@@ -1,7 +1,9 @@
 package mlk.hanif.resumeBuilder.model;
 
-import java.util.Date;
+import lombok.Data;
 
+import java.util.Date;
+@Data
 public class Education {
     private String title;
     private String university;

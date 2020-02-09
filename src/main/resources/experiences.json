@@ -190,7 +190,7 @@
         "title": " Java Messaging System(ActiveMQ)"
       },
       {
-        "title": " Database (Oracle \& MySQL) and ORM(Hibernate)."
+        "title": " Database (Oracle & MySQL) and ORM(Hibernate)."
       },
       {
         "title": " Linux and bash (Red-hat, CentOS)."
@@ -217,7 +217,7 @@
   {
     "dateFrom": "2012-10-01",
     "dateTo": "2012-12-31",
-    "jobTitle": "Software Developer \\& Analyst",
+    "jobTitle": "Software Developer & Analyst",
     "company": {
       "title": "Mobile Value Added Service Laboratory, Sharif University of Technology",
       "city": "Tehran",
@@ -251,10 +251,12 @@
     "company": {
       "title": "University of Applied Sciences, Shohadaye Nezaja"
     },
-    "projects": {
-      "title": "Student Manager \\& Teacher",
-      "description": "As Social Service"
-    },
+    "projects": [
+      {
+        "title": "Student Manager & Teacher",
+        "description": "As Social Service"
+      }
+    ],
     "technologies": [
       {
         "title": "Teaching basic mathematics and physic."
@@ -267,7 +269,7 @@
   {
     "dateFrom": "2010-02-01",
     "dateTo": "2010-10-31",
-    "jobTitle": "Software Developer \\& Analyst",
+    "jobTitle": "Software Developer & Analyst",
     "company": {
       "title": "Mobile Value Added Service Laboratory, Sharif University of Technology",
       "city": "Tehran",
@@ -293,8 +295,92 @@
         "title": "Value Added Services in mobile communication."
       }
     ]
+  },
+  {
+    "dateFrom": "2010-04-01",
+    "dateTo": "2010-07-31",
+    "leavingReason": "Master Thesis",
+    "jobTitle": "Technical Director",
+    "city": "Tehran",
+    "company": {
+      "title": "Raj Samaneh Software Corporation"
+    },
+    "projects": [
+      {
+        "title": "Raj Samaneh Accounting System",
+        "description": "An accounting software for storing transactions and providing various reports supporting multi-users and web-based user interface."
+      }
+    ],
+    "technologies": [
+      {
+        "title": " Google Web Toolkit."
+      },
+      {
+        "title": " J2SE"
+      },
+      {
+        "title": " Databse(MySqL) and ORM(Hibernate).,"
+      }
+    ],
+    "achievements": [
+      {
+        "title": " Financial software."
+      },
+      {
+        "title": " Software design."
+      }
+    ]
+  },
+  {
+    "dateFrom": "2009-11-01",
+    "dateTo": "2010-03-31",
+    "jobTitle": "Developer & Document Writer",
+    "city": "Tehran",
+    "leavingReason": "Company closed",
+    "company": {
+      "title": "Pars Asan Afzar Software Co."
+    },
+    "projects": [
+      {
+        "title": "Asan Afzar Content Management System(Help Document writer)",
+        "description": "A web-based software for managing different contents provided for the cell phones and the list of supporting hardware and software."
+      },
+      {
+        "title": "Asan Afzar Software Activation Systems(Developer)",
+        "description": "A digital right management(DRM)-based activation system providing copyright and prevent illegal usage for the mobile software product."
+      }
+    ]
+  },
+  {
+    "dateFrom": "2007-09-20",
+    "dateTo": "2009-01-25",
+    "jobTitle": "Java Developer",
+    "city": "Tehran",
+    "leavingReason": "Focous on the University",
+    "company": {
+      "title": "Arad Software Engineering "
+    },
+    "projects": [
+      {
+        "title": "Arad Accounting",
+        "description": "A typical accounting software supporting multi-users and web-based user interface."
+      },
+      {
+        "title": "Arad Sale System",
+        "description": "A sale support system supporting bar-code reader and web-based user interface."
+      },
+      {
+        "title": "Arad registration System",
+        "description": "A web-based system that manages comprehensively processes in educational institutions like student management, schedule management, teacher management and course management."
+      }
+    ]
   }
 ]
+
+
+
+
+
 
 
 

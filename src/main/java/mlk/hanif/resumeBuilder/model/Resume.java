@@ -9,5 +9,6 @@ public class Resume {
     PersonalInfo personalInfo;
     List<Education> educations;
     List<Experience> experiences;
+    List<Language> languages;
 
 }

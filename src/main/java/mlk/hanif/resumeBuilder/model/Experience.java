@@ -7,10 +7,13 @@ import java.util.List;
 
 @Data
 public class Experience {
-    Company company;
-    Date dateFrom;
-    Date dateTo;
-    String leavingReason;
-    String jobTitle;
-    List<Projects> projects ;
+    private Company company;
+    private Date dateFrom;
+    private Date dateTo;
+    private String leavingReason;
+    private String jobTitle;
+    private String city;
+    private List<Projects> projects ;
+    private List<Technology> technologies;
+    private List<Achievement> achievements;
 }
