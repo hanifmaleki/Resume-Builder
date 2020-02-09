@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Master of Logic and Computation}{Technical University",
+    "university": "Technical University of Vienna",
+    "degree": "Master of Science",
+    "city": "Vienna",
+    "dateFrom": "2015-11-23",
+    "dateTo": "2019-01-23",
+    "average": "1.69",
+    "thesis": {
+      "title": "The deletion set in to Small  Components",
+      "supervisor": "Dr. Sebastian Ordyniak",
+      "institute": "Algorithms and Complexity Group, Faculty of Informatics, TU-Wien",
+      "description": "The deletion into small component problem is an NP-hard problem in Graph Theory.The application of the problem consist of measuring network vulnerability, solvingPlanning instances efficiently and solving ILP instances quickly. In this thesis manypractical exact and heuristic algorithms are introduced and compared for the problem"
+    }
+  },
+  {
+    "title": "Master of Software Engineering",
+    "university": "Azad University of Science \\& Research",
+    "degree": "Master of Engineering",
+    "city": "Tehran",
+    "dateFrom": "2007-09-30",
+    "dateTo": "2010-02-10",
+    "average": "16/20",
+    "thesis": {
+      "title": "Dynamic Source Routing in Real-Time Real Mobile Ad Hoc Networks",
+      "supervisor": "Dr. Mahdi Kargahi"
+    }
+  },
+  {
+    "title": "Bachelor of Computer Engineering",
+    "university": "Mazandaran University of Science \& Technology",
+    "city": "Babol",
+    "dateFrom": "2001-09-30",
+    "dateTo": "2005-11-20",
+    "average": "14/20",
+    "thesis": {
+      "title": "Evaluating Software Architecture using Colored Petri Nets",
+      "supervisor": "Dr. Homayoon Motameni"
+    }
+  }
+]

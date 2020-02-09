@@ -1,0 +1,23 @@
+Resume
+Personal Information:
+#evaluate($resume.personalInfo)
+
+Educations
+#foreach($education in $resume.educations)
+    #evaluate($education)
+
+#end
+
+Experiences
+#foreach($experience in $resume.experiences)
+* #evaluate($experience.company.title)
+    #evaluate($dateTool.format('MMMM yyyy', $experience.dateFrom))
+    #if($experience.dateTo)
+- #evaluate($dateTool.format('MMMM yyyy',$experience.dateTo))
+    #else
+- #evaluate("Current")
+    #end
+
+#end
+Sincerely yours -
+Generation Date: $dateTool.get('MMMM yyyy')

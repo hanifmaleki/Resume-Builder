@@ -1,0 +1,229 @@
+[
+  {
+    "dateFrom": "2018-07-1",
+    "leavingReason": "long distance",
+    "jobTitle": "Java Back-end Developer",
+    "company": {
+      "title": "BearingPoint(RegTech)",
+      "website": "https://www.reg.tech/en/",
+      "city": "Graz",
+      "description": "????"
+    },
+    "projects": [
+      {
+        "title": "EaszTax!",
+        "description": "International client tax calculation and reporting solution",
+        "website": "https://www.reg.tech/en/our-solutions/banks-other-financial-institutions/easytax-client-tax-reporting/"
+      }
+    ],
+    "technologies": [
+      {
+        "title": "Java, Groovy"
+      },
+      {
+        "title": "Build tool: Gradle"
+      },
+      {
+        "title": "Version Control: Git"
+      },
+      {
+        "title": "Devops: Jenkins, Docker, OpenStack, ..."
+      },
+      {
+        "title": "Spring : core, spring-boot, security JdbcTemplate"
+      },
+      {
+        "title": "Web/Application Server: Tomcat"
+      },
+      {
+        "title": "Web Service: Spring Web Service, Swagger"
+      },
+      {
+        "title": "Apache Camel"
+      },
+      {
+        "title": "Testing: Spock"
+      },
+      {
+        "title": "Database: Oracle, MS SQL, PostgresSQL"
+      },
+      {
+        "title": "ORM: JPA (Hibernate Implementation)"
+      },
+      {
+        "title": "Messaging: Apache ActiveMQ"
+      },
+      {
+        "title": "Template Engines: Thymleaf, Apache Velocity"
+      },
+      {
+        "title": "Shell tools: ..."
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Working in Agile team using Scrum methodology"
+      },
+      {
+        "title": "Experience of dealing with complicated and big business"
+      }
+    ]
+  },
+  {
+    "company": {
+      "title": "SMART ASSETS GmbH",
+      "website": "http://www.smartassets.at/",
+      "city": "Vienna",
+      "description": "SMART ASSETS creates and develops innovative, mobile solutions and provides consulting, business development and incubation services for telecommunications and web projects."
+    },
+    "dateFrom": "2016-07-01",
+    "dateTo": "2016-11-30",
+    "jobTitle": "Android Developer",
+    "leavingReason": "Development department were closed",
+    "projects": [
+      {
+        "title": "Use it! Android client",
+        "website": "https://useit.at/Einzeltraining/)",
+        "description": "Use it! is an on-line shopping that has web-based admin panel as well as Android, iOS and web client user interface"
+      }
+    ],
+    "technologies": [
+      {
+        "title": "Android"
+      },
+      {
+        "title": "Git(GitLab)"
+      },
+      {
+        "title": "HTML, CSS, Javascript, JSON"
+      }
+    ],
+    "achievements": [
+      {
+        "title": " Front-end development."
+      },
+      {
+        "title": " Mobile development."
+      }
+    ]
+  },
+  {
+    "company": {
+      "title": "Negin Software Development Co.",
+      "city": "Tehran",
+      "website": "https://www.tosan.com/en",
+      "description": "TOSAN Corporation was founded in 1998 specializing in the provision of end-to-end banking solutions for both conventional and Islamic financial institutions. TOSAN is the first and largest market-leading provider of banking software solutions to retail, corporate, private, microfinance banks in Iran."
+    },
+    "dateFrom": "2014-08-01",
+    "dateTo": "2015-10-31",
+    "jobTitle": "Java Developer",
+    "leavingReason": "Migration to austria",
+    "projects": [
+      {
+        "title": "Clear and Settlement",
+        "description": "Micropayment application that collect and store huge number of transactions from various payment terminals and do settlement after specific periods of time."
+      },
+      {
+        "title": "Card Management System",
+        "description": "A system of managing life-cycle of the ticket cards and micro-payment cards."
+      }
+    ],
+    "technologies": [
+      {
+        "title": "J2EE platform."
+      },
+      {
+        "title": "Soap web-service."
+      },
+      {
+        "title": "Glassfish, Tomcat."
+      },
+      {
+        "title": "Nightly build, continues integration and continues delivery(Jenkins)."
+      }
+    ],
+    "achievements": [
+      {
+        "title": "New features in high performance software."
+      },
+      {
+        "title": "Agile development, 2 weeks sprints."
+      },
+      {
+        "title": "Test driven development."
+      },
+      {
+        "title": "Cooperation of many small teams in an organization."
+      },
+      {
+        "title": "Working in a large companies(about 1000 developers)."
+      },
+      {
+        "title": "The issues of financial and banking software."
+      }
+    ]
+  },
+  {
+    "dateFrom": "2012-01-21",
+    "dateTo": "2014-07-31",
+    "jobTitle": "Java Developer",
+    "company": {
+      "title": "Eticke Parse Technology Development Co.",
+      "website": "www.etick.ir",
+      "city": "Tehran",
+      "description": "Etick is a company specialize in micropayment applications."
+    },
+    "projects": [
+      {
+        "title": "Automated Fare Collection",
+        "description": "A system of digital fare collection for public transport. Implemented in two big cities Mashhad and Ahvaz. It collects transactions from the terminals located in the vehicles, sends into a central system and, does settlements every day. Languages, tools and framework:"
+      }
+    ],
+    "technologies": [
+      {
+        "title": " J2SE, J2EE."
+      },
+      {
+        "title": " Spring"
+      },
+      {
+        "title": " Java Messaging System(ActiveMQ)"
+      },
+      {
+        "title": " Database (Oracle \& MySQL) and ORM(Hibernate)."
+      },
+      {
+        "title": " Linux and bash (Red-hat, CentOS)."
+      },
+      {
+        "title": " Socket programming(Apache Mina)."
+      }
+    ],
+    "achievements": [
+      {
+        "title": " Automated Fare Collection systems."
+      },
+      {
+        "title": " At least 1 million transactions per day."
+      },
+      {
+        "title": " Challenges and experience in real high performance system."
+      },
+      {
+        "title": " Deal directly with customer environment."
+      }
+    ]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+

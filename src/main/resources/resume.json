@@ -1,0 +1,38 @@
+{
+  "personalInfo": {},
+  "educations": [],
+  "experiences": [
+    {
+      "company": {
+        "title": "title",
+        "website": "www",
+        "city": "city"
+      },
+      "dateFrom": "2018-07-01",
+      "dateTo": "2020-11-11",
+      "leavingReason": "long distance",
+      "jobTitle": "Java Back-end Developer",
+      "projects": [
+        {
+          "title": "p-title",
+          "description": "p-desc",
+          "website": "p-webSite",
+          "technologies": [
+            {
+              "title": "java"
+            },
+            {
+              "title": "Spring"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "company": {
+        "title": "BearingPoint(RegTech)"
+      },
+      "dateFrom": "2018-07-1"
+    }
+  ]
+}
