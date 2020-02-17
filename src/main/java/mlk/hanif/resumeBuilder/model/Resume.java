@@ -10,5 +10,6 @@ public class Resume {
     List<Education> educations;
     List<Experience> experiences;
     List<Language> languages;
+    List<AcademicProject> academicProjects;
 
 }

@@ -1,0 +1,132 @@
+[
+  {
+    "course": "Machine Learning",
+    "title": "Classification and Regression of different datasets",
+    "date": "2017-01-15",
+    "technologies": [
+      {
+        "title": "Different classification methods."
+      },
+      {
+        "title": "Different regression methods."
+      },
+      {
+        "title": "Feature selection methods."
+      },
+      {
+        "title": "Python."
+      },
+      {
+        "title": "SKlearn tool."
+      }
+    ]
+  },
+  {
+    "course": "Linear Programming",
+    "title": "Computing Optimum K-Minimum Spanning Tree\n",
+    "date": "2016-06-01",
+    "description": "K-Minimum Spanning tree is a spanning tree contains $k$ subset of vertices.\nFour linear programming methods were designed and implemented for this problem.",
+    "technologies": [
+      {
+        "title": "Gurobi optimizer"
+      },
+      {
+        "title": "Python"
+      },
+      {
+        "title": "Branch and cut\n"
+      }
+    ]
+  },
+  {
+    "course": "Advanced Operating System(Research Projects)",
+    "title": "Multiprocessor scheduling using genetic algorithm",
+    "date": "2017-01-15",
+    "description": "File transmission between clients using RMI in Java",
+    "technologies": [
+      {
+        "title": "Using Java RMI in order to transfer files between two remote computers through the network."
+      }
+    ]
+  },
+  {
+    "course": "Advanced Software Engineering & Computer Simulation",
+    "title": "Evaluating Software Architecture using Petri nets\n",
+    "date": "2005-06-01",
+    "description": "Implementation and simulation of color Petri nets based simulator with the capability of evaluating nonfunctional parameters in software architectures using visual basic. Software architecture is modeled with a simple and efficient structure called colored petri nets. It is possible to evaluate some nonfunctional architecture parameters like reliability, availability and etc. in the obtained structure.",
+    "technologies": [
+      {
+        "title": "Computer simulation."
+      },
+      {
+        "title": "Petri net."
+      },
+      {
+        "title": "Software Architecture & non-functional parameters."
+      }
+    ]
+  },
+  {
+    "course": "Artificial Intelligence",
+    "title": "Chess",
+    "date": "2004-06-01",
+    "description": "Intelligent chess game using Delphi",
+    "technologies": [
+      {
+        "title": "Min-Max trees."
+      },
+      {
+        "title": "Delphi."
+      }
+    ]
+  },
+  {
+    "course": "Compiler",
+    "title": "Pascal to C++ code converter",
+    "date": "2004-01-15",
+    "description": "",
+    "technologies": [
+      {
+        "title": "Understanding fundamentals of compilers."
+      },
+      {
+        "title": "Lexical analysis."
+      },
+      {
+        "title": "Parser.\n"
+      }
+    ]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

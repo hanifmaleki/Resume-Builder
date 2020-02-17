@@ -13,9 +13,25 @@ Experiences
 * #evaluate($experience.company.title)
     #evaluate($dateTool.format('MMMM yyyy', $experience.dateFrom))
     #if($experience.dateTo)
-- #evaluate($dateTool.format('MMMM yyyy',$experience.dateTo))
+    - #evaluate($dateTool.format('MMMM yyyy',$experience.dateTo))
     #else
-- #evaluate("Current")
+    - #evaluate("Current")
+    #end
+
+#end
+
+Academic Projects
+
+#foreach($academicProject in $resume.academicProjects)
+* #evaluate($academicProject.title)
+Course: #evaluate($academicProject.course)
+Date: #evaluate($dateTool.format('MMMM yyyy',$academicProject.date))
+    #if($academicProject.description)
+    Description: #evaluate($academicProject.description)
+    #end
+Technologies:
+    #foreach($technology in $academicProject.technologies)
+- #evaluate($technology.title)
     #end
 
 #end
