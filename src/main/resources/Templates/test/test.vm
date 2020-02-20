@@ -35,5 +35,32 @@ Technologies:
     #end
 
 #end
+
+Languages
+#foreach($language in $resume.languages)
+#evaluate($language)
+#end
+
+
+Certificates
+#foreach($certificate in $resume.certificates)
+#evaluate($certificate.title)
+
+#evaluate($certificate.description)
+
+#evaluate($certificate.issuer)
+
+#evaluate($certificate.webAddress)
+
+#end
+
+Skills
+#foreach($skill in $resume.skills)
+#evaluate($skill.group)  #evaluate($skill.title)
+
+    #foreach($skillItem in $skill.skillItems)
+#evaluate($skillItem.title)  #evaluate($skillItem.familiarity)  #evaluate($skillItem.experienceDuration)    #evaluate($skillItem.last)
+    #end
+#end
 Sincerely yours -
 Generation Date: $dateTool.get('MMMM yyyy')

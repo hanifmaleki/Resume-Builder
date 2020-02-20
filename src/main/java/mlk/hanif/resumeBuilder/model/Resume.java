@@ -11,5 +11,7 @@ public class Resume {
     List<Experience> experiences;
     List<Language> languages;
     List<AcademicProject> academicProjects;
+    List<Certificate> certificates;
+    List<Skill> skills;
 
 }

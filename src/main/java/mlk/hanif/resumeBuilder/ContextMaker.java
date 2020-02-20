@@ -17,6 +17,8 @@ public class ContextMaker {
         resume.setExperiences(Arrays.asList(readDataFromJsonFile("experiences.json", Experience[].class)));
         resume.setLanguages(Arrays.asList(readDataFromJsonFile("languages.json", Language[].class)));
         resume.setAcademicProjects(Arrays.asList(readDataFromJsonFile("academicProjects.json", AcademicProject[].class)));
+        resume.setCertificates(Arrays.asList(readDataFromJsonFile("certificates.json", Certificate[].class)));
+        resume.setSkills(Arrays.asList(readDataFromJsonFile("skills.json", Skill[].class)));
 
         return resume;
     }

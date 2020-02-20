@@ -1,0 +1,62 @@
+[
+  {
+    "group": "J2SE",
+    "title": "Java2 Standard Edition",
+    "skillItems": [
+      {
+        "title": "Core Language",
+        "familiarity": "Very Good",
+        "experienceDuration": "12+ Years",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "Lambda Expression",
+        "familiarity": "Good",
+        "experienceDuration": "2 Years",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "RMI",
+        "familiarity": "Good",
+        "experienceDuration": "6 Months",
+        "last": "2016-01-01"
+      },
+      {
+        "title": "JDBC",
+        "familiarity": "Very Good",
+        "experienceDuration": "5+ Years",
+        "last": "2017-01-01"
+      },
+      {
+        "title": "Swing",
+        "familiarity": "Good",
+        "experienceDuration": "2 Years",
+        "last": "2010-01-01"
+      },
+      {
+        "title": "Reflection",
+        "familiarity": "Good",
+        "experienceDuration": "6 Months",
+        "last": "2015-01-01"
+      },
+      {
+        "title": "Generic",
+        "familiarity": "Good",
+        "experienceDuration": "2+ Years",
+        "last": "2019-01-01"
+      }
+    ]
+  },
+  {
+    "group": "",
+    "title": "",
+    "skillItems": [
+      {
+        "title": "",
+        "familiarity": "",
+        "experienceDuration": "",
+        "last": ""
+      }
+    ]
+  }
+]
