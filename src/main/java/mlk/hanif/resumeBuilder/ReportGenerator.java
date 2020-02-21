@@ -5,6 +5,7 @@ import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
 import org.apache.velocity.tools.generic.DateTool;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +19,7 @@ import java.util.Arrays;
 
 public class ReportGenerator {
     //TODO move to a config file
-    public static final String TEMPLATES_DIR = "Templates/";
+    public static final String TEMPLATES_DIR = "templates/";
     final DateTool dateTool = new DateTool();
     private String templateFolderName;
     private VelocityEngine velocityEngine;
