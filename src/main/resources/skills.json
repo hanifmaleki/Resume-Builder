@@ -48,6 +48,72 @@
     ]
   },
   {
+    "group": "J2EE",
+    "title": "Java2 Enterprise Edition",
+    "skillItems": [
+      {
+        "title": "ORM",
+        "familiarity": "Good",
+        "experienceDuration": "5+ Years",
+        "last": "2019-01-01"
+      },
+      {
+        "title": "Jpa",
+        "familiarity": "Good",
+        "experienceDuration": "4+ Years",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "Hibernate",
+        "familiarity": "Good",
+        "experienceDuration": "2+ Years",
+        "last": "2018-01-01"
+      },
+      {
+        "title": "IoC",
+        "familiarity": "Good",
+        "experienceDuration": "3+ Years",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "EJB",
+        "familiarity": "Familiar",
+        "experienceDuration": "1 Year",
+        "last": "2015-01-01"
+      },
+      {
+        "title": "Java Application Server(Tomcat-Glassfish)",
+        "familiarity": "Familiar",
+        "experienceDuration": "2+ Years",
+        "last": "2017-01-01"
+      },
+      {
+        "title": "Messaging System (JMS-ActiveMQ)",
+        "familiarity": "Familiar",
+        "experienceDuration": "3+ Year",
+        "last": "2018-01-01"
+      },
+      {
+        "title": "Java Server Page - Servlet",
+        "familiarity": "Familiar",
+        "experienceDuration": "6 Months",
+        "last": "2012-01-01"
+      },
+      {
+        "title": "Web-Service - Soap (Jax-WS)",
+        "familiarity": "Good",
+        "experienceDuration": "6 Months",
+        "last": "2015-01-01"
+      },
+      {
+        "title": "Web-Service - Rest (Jax-RS)",
+        "familiarity": "Good",
+        "experienceDuration": "6 Months",
+        "last": "2019-01-01"
+      }
+    ]
+  },
+  {
     "group": "",
     "title": "",
     "skillItems": [
