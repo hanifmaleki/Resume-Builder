@@ -4,8 +4,7 @@ import mlk.hanif.resumeBuilder.model.Resume;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
-import org.apache.velocity.tools.generic.DateTool;
-import org.springframework.stereotype.Component;
+//import org.apache.velocity.tools.generic.DateTool;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,7 +19,7 @@ import java.util.Arrays;
 public class ReportGenerator {
     //TODO move to a config file
     public static final String TEMPLATES_DIR = "templates/";
-    final DateTool dateTool = new DateTool();
+//    final DateTool dateTool = new DateTool();
     private String templateFolderName;
     private VelocityEngine velocityEngine;
     private VelocityContext velocityContext;
@@ -36,7 +35,7 @@ public class ReportGenerator {
     private void initializeVelocityContext(Resume context) {
         velocityContext = new VelocityContext();
         velocityContext.put("resume", context);
-        velocityContext.put("dateTool", dateTool);
+//        velocityContext.put("dateTool", dateTool);
     }
 
     private void initializeVelocityEngine() {

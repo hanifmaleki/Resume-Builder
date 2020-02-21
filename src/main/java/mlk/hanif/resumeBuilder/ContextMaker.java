@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Arrays;
 
+@Component
 public class ContextMaker {
 
     public Resume getContext() {
