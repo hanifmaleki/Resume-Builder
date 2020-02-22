@@ -114,6 +114,78 @@
     ]
   },
   {
+    "group": "Spring",
+    "title": "Spring Framework",
+    "skillItems": [
+      {
+        "title": "   Core(IoC & AOP)",
+        "familiarity": ")Good",
+        "experienceDuration": "2+ Years",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "Spring Boot ",
+        "familiarity": "Good",
+        "experienceDuration": "2+ Years ",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "Spring Data (JDBC & JPA)",
+        "familiarity": "Familiar",
+        "experienceDuration": "1 Year",
+        "last": "2019-01-01"
+      },
+      {
+        "title": "Spring Security",
+        "familiarity": "Basic",
+        "experienceDuration": "3 Months",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "Spring Web Service",
+        "familiarity": "Familiar",
+        "experienceDuration": "6 Months",
+        "last": "2019-01-01"
+      }
+    ]
+  },
+  {
+    "group": "Scripting",
+    "title": "JVM Based Languages",
+    "skillItems": [
+      {
+        "title": "Groovy",
+        "familiarity": "Familiar",
+        "experienceDuration": "1+ Year",
+        "last": "2019-01-01"
+      },
+      {
+        "title": "Kotlin",
+        "familiarity": "Basic",
+        "experienceDuration": "1 Month",
+        "last": "2019-01-01"
+      }
+    ]
+  },
+  {
+    "group": "Test",
+    "title": "Tools & Frameworks",
+    "skillItems": [
+      {
+        "title": "JUnit",
+        "familiarity": "Familiar",
+        "experienceDuration": "1+ Year",
+        "last": "2015-01-01"
+      },
+      {
+        "title": "Spock",
+        "familiarity": "Good",
+        "experienceDuration": "1+ Year",
+        "last": "2020-01-01"
+      }
+    ]
+  },
+  {
     "group": "",
     "title": "",
     "skillItems": [
