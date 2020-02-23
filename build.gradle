@@ -3,6 +3,7 @@ plugins {
     id 'groovy'
     id 'org.springframework.boot' version '2.2.4.RELEASE'
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id "org.openapi.generator" version "4.2.3"
 }
 
 apply plugin: 'idea'
@@ -41,3 +42,24 @@ test {
         events "passed", "skipped", "failed"
     }
 }
+
+
+openApiGenerate {
+    generatorName = "spring"
+    outputDir = "$rootDir/src/main/java/mlk/hanif/resumeBuilder/webService"
+    inputSpec = "$rootDir/src/main/resources/ws-specification/resume.yaml"
+//    configFile= ""
+    packageName = "mlk.hanif.resumeBuilder.webService"
+//    apiPackage = "org.openapi.example.api"
+//    invokerPackage = "org.openapi.example.invoker"
+//    modelPackage = "org.openapi.example.model"
+    modelNameSuffix = "Resource"
+    generateModelTests = false
+    generateModelDocumentation = false
+    generateApiTests = false
+    generateApiDocumentation = false
+
+}
+
+
+compileJava.dependsOn tasks.openApiGenerate
