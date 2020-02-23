@@ -27,7 +27,7 @@ public class ContextMaker {
 
     private <T> T readDataFromJsonFile(String fileName, Class<T> clazz) {
         ObjectMapper mapper = new ObjectMapper();
-        URL resource = Application.class.getClassLoader().getResource(fileName);
+        URL resource = this.getClass().getClassLoader().getResource(fileName);
         try {
             return mapper.readValue(resource, clazz);
         } catch (IOException e) {

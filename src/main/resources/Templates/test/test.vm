@@ -57,10 +57,10 @@ Certificates
 Skills
 #foreach($skill in $resume.skills)
 #evaluate($skill.group)  #evaluate($skill.title)
-
     #foreach($skillItem in $skill.skillItems)
 #evaluate($skillItem.title)  #evaluate($skillItem.familiarity)  #evaluate($skillItem.experienceDuration)    #evaluate($skillItem.last)
     #end
+
 #end
 Sincerely yours -
 Generation Date: $dateTool.get('MMMM yyyy')
