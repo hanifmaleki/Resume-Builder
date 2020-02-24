@@ -62,4 +62,4 @@ openApiGenerate {
 }
 
 
-compileJava.dependsOn tasks.openApiGenerate
+//compileJava.dependsOn tasks.openApiGenerate
