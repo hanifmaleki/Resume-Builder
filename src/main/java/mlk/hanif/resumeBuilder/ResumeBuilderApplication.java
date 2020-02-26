@@ -21,6 +21,4 @@ public class ResumeBuilderApplication {
             e.printStackTrace();
         }
     }
-
-
 }

@@ -11,8 +11,17 @@ import java.util.Arrays;
 @Component
 public class ContextMaker {
 
-    public Resume getContext() {
 
+    private Resume resume = null ;
+
+    public Resume getContext() {
+        if (resume==null){
+            resume = fetchResume();
+        }
+        return resume;
+    }
+
+    private Resume fetchResume() {
         Resume resume = new Resume();
         resume.setPersonalInfo(readDataFromJsonFile("personalInfo.json", PersonalInfo.class));
         resume.setEducations(Arrays.asList(readDataFromJsonFile("educations.json", Education[].class)));
