@@ -6,6 +6,9 @@ version: 2.1
 orbs:
   heroku: circleci/heroku@1.0.1 # Invoke the Heroku orb
 workflows:
+  heroku_deploy:
+    jobs:
+      - deploy
 
 jobs:
   build:
