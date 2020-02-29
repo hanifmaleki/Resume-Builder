@@ -15,7 +15,7 @@ public class LanguageController {
     @GetMapping("/language")
     public String getAll(Model model){
         model.addAttribute("languages", contextMaker.getContext().getLanguages());
-        return "language";
+        return "/language";
     }
 
 }

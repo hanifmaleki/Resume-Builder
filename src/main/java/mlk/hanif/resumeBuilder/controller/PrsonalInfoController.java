@@ -15,7 +15,7 @@ public class PrsonalInfoController {
     @GetMapping("/")
     public String getPersonalInfo(Model model){
         model.addAttribute("personalInfo", contextMaker.getContext().getPersonalInfo());
-        return "index";
+        return "/index";
     }
 
 }
