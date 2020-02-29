@@ -7,15 +7,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class LanguageController {
+public class PrsonalInfoController {
 
     @Autowired
     private ContextMaker contextMaker;
 
-    @GetMapping("/language")
-    public String getAll(Model model){
-        model.addAttribute("languages", contextMaker.getContext().getLanguages());
-        return "language";
+    @GetMapping("/")
+    public String getPersonalInfo(Model model){
+        model.addAttribute("personalInfo", contextMaker.getContext().getPersonalInfo());
+        return "index";
     }
 
 }
