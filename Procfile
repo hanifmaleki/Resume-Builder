@@ -1,2 +1,1 @@
-gradlew clean build
-web java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/*.jar
+web: java -Xmx384m -Xss512k -XX:+UseCompressedOops -jar build/libs/*.jar --server.port=$PORT
