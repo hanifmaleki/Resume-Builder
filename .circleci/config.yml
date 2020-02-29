@@ -3,6 +3,8 @@
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
 version: 2
+orbs:
+  heroku: circleci/heroku@0.0.10. # Invoke the Heroku orb
 jobs:
   build:
     docker:
@@ -43,3 +45,13 @@ jobs:
 
       # run tests!
       - run: gradle test
+workflows:
+  heroku_deploy:
+    jobs:
+      - build
+      - heroku/deploy-via-git: # Use the pre-configured job, deploy-via-git
+          requires:
+            - build
+          filters:
+            branches:
+              only: master # only run deploy-via-git job on master branch
