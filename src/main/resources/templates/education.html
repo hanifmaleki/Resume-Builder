@@ -3,15 +3,16 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Languages</title>
+    <title>My Home</title>
 </head>
 <body>
-<ul th:each="language: ${languages}">
-    <li th:text="${language}"/>
+<ul th:each="name: ${names}">
+    <li th:text="${name}"/>
 </ul>
 
-
 <a href="\">Home</a>
+<a href="language">Languages</a>
+
 
 </body>
 </html>

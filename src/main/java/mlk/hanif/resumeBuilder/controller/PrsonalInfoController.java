@@ -10,16 +10,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PrsonalInfoController {
 
-//    @Autowired
-//    private ContextMaker contextMaker;
+    @Autowired
+    private ContextMaker contextMaker;
 
-    @GetMapping("/index")
+    @GetMapping("/")
     public String getPersonalInfo(Model model){
-        PersonalInfo personalInfo = new PersonalInfo(); //contextMaker.getContext().getPersonalInfo();
-        personalInfo.setName("Hanif");
-        personalInfo.setFamily("Maleki");
+        PersonalInfo personalInfo = contextMaker.getContext().getPersonalInfo();
         model.addAttribute("personalInfo", personalInfo);
-        return "index";
+        return "home";
     }
 
 }

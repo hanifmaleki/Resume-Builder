@@ -10,16 +10,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @Controller
-public class MainController {
+public class EducationController {
 
     @Autowired
     private ContextMaker contextMaker;
 
-    @GetMapping("/")
+    @GetMapping("/education")
     public String getHomePage(Model model){
 //        String[] names = {"John", "Sebastian", "Mark", "Gerhard"};
         List<Education> names = contextMaker.getContext().getEducations();
         model.addAttribute("names", names);
-        return "home";
+        return "education";
     }
 }
