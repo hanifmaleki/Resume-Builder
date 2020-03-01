@@ -15,6 +15,7 @@ public class MainController {
     @GetMapping("/")
     public String getHomePage(Model model){
         String[] names = {"John", "Sebastian", "Mark", "Gerhard"};
+        contextMaker.getContext().getEducations();
         model.addAttribute("names", names);
         return "home";
     }
