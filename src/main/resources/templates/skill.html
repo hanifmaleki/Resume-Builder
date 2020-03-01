@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills</title>
+</head>
+<body>
+<ul th:each="skill: ${skills}">
+    <li th:text="${skill}"/>
+</ul>
+
+<a href="\">Home</a>
+<a href="language">Languages</a>
+
+
+</body>
+</html>
