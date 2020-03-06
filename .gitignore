@@ -22,3 +22,6 @@ build
 .idea
 generated
 out
+/src/generated
+/.openapi-generator/
+/.openapi-generator-ignore

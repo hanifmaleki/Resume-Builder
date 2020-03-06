@@ -19,6 +19,18 @@ configurations {
     }
 }
 
+sourceSets{
+    main {
+        java {
+            srcDir "$rootDir/src/main/generated"
+        }
+    }
+}
+
+clean.doFirst {
+    delete "$rootDir/src/main/generated/"
+}
+
 repositories {
     mavenCentral()
 }
@@ -34,6 +46,8 @@ dependencies {
 //    compile group: 'org.apache.velocity', name: 'velocity-tools', version: '2.0'
     testCompile group: 'org.spockframework', name: 'spock-core', version: '2.0-M1-groovy-2.5'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
+    compile group: 'io.swagger', name: 'swagger-annotations', version: '1.5.0'
+    compile 'org.openapitools:jackson-databind-nullable:0.1.0'
 }
 
 test {
@@ -46,6 +60,7 @@ test {
 
 openApiGenerate {
     generatorName = "spring"
+    library = "spring-mvc"
     outputDir = "$rootDir"
     inputSpec = "$rootDir/src/main/resources/ws-specification/resume.yaml"
     apiPackage = "mlk.hanif.resumeBuilder.restApi.api"
@@ -56,15 +71,18 @@ openApiGenerate {
     generateApiTests = false
     generateApiDocumentation = false
     configOptions = [
-            intefaceOnly   : "true",
-            implicitHeaders: "false"
+            interfaceOnly  : "true",
+            implicitHeaders: "false",
+            skipDefaultInterface : 'true',
+            sourceFolder: 'src/main/generated'
     ]
     systemProperties = [
-            apis           : "",
-            models         : "",
+            apis  : "",
+            models: "",
+            supportingFiles : "ApiUtil.java"
     ]
-
 }
 
 
-//compileJava.dependsOn tasks.openApiGenerate
+
+compileJava.dependsOn tasks.openApiGenerate
