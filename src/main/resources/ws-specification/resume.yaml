@@ -29,7 +29,7 @@ tags:
       description: Find out more about our store
       url: http://swagger.io
 paths:
-  /language:
+  /langs:
     get:
       tags:
         - languages
