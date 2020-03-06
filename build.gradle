@@ -19,7 +19,7 @@ configurations {
     }
 }
 
-sourceSets{
+sourceSets {
     main {
         java {
             srcDir "$rootDir/src/main/generated"
@@ -71,18 +71,17 @@ openApiGenerate {
     generateApiTests = false
     generateApiDocumentation = false
     configOptions = [
-            interfaceOnly  : "true",
-            implicitHeaders: "false",
-            skipDefaultInterface : 'true',
-            sourceFolder: 'src/main/generated'
+            interfaceOnly       : "true",
+            implicitHeaders     : "false",
+            skipDefaultInterface: 'true',
+            sourceFolder        : 'src/main/generated'
     ]
     systemProperties = [
-            apis  : "",
-            models: "",
-            supportingFiles : "ApiUtil.java"
+            apis           : "",
+            models         : "",
+            supportingFiles: "ApiUtil.java"
     ]
 }
-
 
 
 compileJava.dependsOn tasks.openApiGenerate
