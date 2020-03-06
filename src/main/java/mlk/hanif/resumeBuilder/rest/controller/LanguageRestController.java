@@ -27,7 +27,6 @@ public class LanguageRestController implements LangsApi {
     public ResponseEntity<List<LanguageResource>> langsGet() {
 
         //TODO please use DZONE for the convertion
-
         return ResponseEntity.ok(null);
     }
 }
