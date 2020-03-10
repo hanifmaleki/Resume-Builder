@@ -9,11 +9,13 @@
     <div th:fragment="header">
         <h1>This is Common Header</h1>
     </div>
-    <div th:fragment="footer">
-        <p th:text="${pages}"/>
+    <div th:fragment="footer(currentPage)">
+        <tr th:each="page: ${pages}">
+            <span th:if="${page.key != currentPage}">
+                <a th:href="${page.key}" th:text="${page.value}"/>
+            </span>
+        </tr>
 
-        <a href="language">Languages</a>
     </div>
-
 </body>
 </html>

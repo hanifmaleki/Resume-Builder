@@ -6,13 +6,11 @@
     <title>Skills</title>
 </head>
 <body>
+<header th:insert="common.html :: header"/>
+
 <ul th:each="skill: ${skills}">
     <li th:text="${skill}"/>
 </ul>
-
-<a href="\">Home</a>
-<a href="language">Languages</a>
-
-
+<div th:replace="common.html :: footer('skill')"/>
 </body>
 </html>
