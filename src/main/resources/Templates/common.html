@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:fragment="header">
+        <h1>This is Common Header</h1>
+    </div>
+    <div th:fragment="footer">
+        <p th:text="${pages}"/>
+
+        <a href="language">Languages</a>
+    </div>
+
+</body>
+</html>

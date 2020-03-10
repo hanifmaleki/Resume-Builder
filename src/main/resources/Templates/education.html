@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>My Home</title>
 </head>
 <body>
-<header th:insert="common.html :: header"/>
-SLAMAMMMMMMM
-<h1 th:text="${personalInfo.name}"/>
-<h1 th:text="${personalInfo.family}"/>
-<p th:text="${personalInfo}"/>
+<ul th:each="name: ${names}">
+    <li th:text="${name}"/>
+</ul>
 
+<a href="\">Home</a>
 <a href="language">Languages</a>
 
 <div th:replace="common.html :: footer"/>
+
 </body>
 </html>
