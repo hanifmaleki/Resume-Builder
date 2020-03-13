@@ -211,24 +211,18 @@
         "title": "AWS",
         "familiarity": "?",
         "experienceDuration": "?",
-        "last": "?"
+        "last": ""
       },
       {
         "title": "OpenStack",
         "familiarity": "?",
         "experienceDuration": "?",
-        "last": "?"
+        "last": ""
       },
       {
         "title": "Azure",
         "familiarity": "?",
         "experienceDuration": "?",
-        "last": "?"
-      },
-      {
-        "title": "",
-        "familiarity": "",
-        "experienceDuration": "",
         "last": ""
       }
     ]
