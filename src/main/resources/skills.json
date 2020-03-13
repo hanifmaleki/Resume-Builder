@@ -186,6 +186,54 @@
     ]
   },
   {
+    "group": "DevOps",
+    "title": "Continuous Integration & Continues Delivery",
+    "skillItems": [
+      {
+        "title": "Fundamentals",
+        "familiarity": "Familiar",
+        "experienceDuration": "3 Months",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "Jenkins",
+        "familiarity": "Familiar",
+        "experienceDuration": "2+ Years",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "Docker",
+        "familiarity": "Familiar",
+        "experienceDuration": "6 Months",
+        "last": "2020-01-01"
+      },
+      {
+        "title": "AWS",
+        "familiarity": "?",
+        "experienceDuration": "?",
+        "last": "?"
+      },
+      {
+        "title": "OpenStack",
+        "familiarity": "?",
+        "experienceDuration": "?",
+        "last": "?"
+      },
+      {
+        "title": "Azure",
+        "familiarity": "?",
+        "experienceDuration": "?",
+        "last": "?"
+      },
+      {
+        "title": "",
+        "familiarity": "",
+        "experienceDuration": "",
+        "last": ""
+      }
+    ]
+  },
+  {
     "group": "",
     "title": "",
     "skillItems": [
