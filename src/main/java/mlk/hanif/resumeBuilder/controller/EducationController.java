@@ -16,7 +16,7 @@ public class EducationController {
     private ContextMaker contextMaker;
 
     @GetMapping("/education")
-    public String getHomePage(Model model){
+    public String getEntities(Model model){
 //        String[] names = {"John", "Sebastian", "Mark", "Gerhard"};
         List<Education> names = contextMaker.getContext().getEducations();
         model.addAttribute("names", names);

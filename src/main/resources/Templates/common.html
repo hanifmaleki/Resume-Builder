@@ -6,16 +6,15 @@
     <title>Title</title>
 </head>
 <body>
-    <div th:fragment="header">
-        <h1>This is Common Header</h1>
-    </div>
-    <div th:fragment="footer(currentPage)">
-        <tr th:each="page: ${pages}">
-            <span th:if="${page.key != currentPage}">
-                <a th:href="${page.key}" th:text="${page.value}"/>
-            </span>
-        </tr>
-
-    </div>
+<div th:fragment="header">
+    <h1>This is Common Header</h1>
+</div>
+<div th:fragment="footer(currentPage)">
+    <tr th:each="page: ${pages}">
+        <span th:if="${page.key != currentPage}">
+            <a th:href="${page.value}" th:text="${page.key}"/></span>
+        <span th:if="${page.key== currentPage}" th:text="${page.key}"/>
+    </tr>
+</div>
 </body>
 </html>

@@ -6,13 +6,13 @@
     <title>Languages</title>
 </head>
 <body>
+<header th:insert="common.html :: header"/>
+
 <ul th:each="language: ${languages}">
     <li th:text="${language}"/>
 </ul>
 
-
-<a href="\">Home</a>
-<div th:replace="common.html :: footer"/>
+<div th:replace="common.html :: footer('language')"/>
 
 </body>
 </html>
