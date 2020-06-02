@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiences</title>
+</head>
+<header th:insert="common.html :: header"/>
+<body>
+<ul th:each="experience: ${experiences}">
+    <li th:text="${experience}"/>
+</ul>
+
+<div th:replace="common.html :: footer('experience')"/>
+</body>
+</html>

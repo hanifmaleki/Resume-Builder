@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Interests</title>
+</head>
+<header th:insert="common.html :: header"/>
+<body>
+<ul th:each="interest: ${interests}">
+    <li th:text="${interest}"/>
+</ul>
+
+<div th:replace="common.html :: footer('interest')"/>
+</body>
+</html>
