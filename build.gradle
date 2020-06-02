@@ -1,3 +1,12 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.owasp:dependency-check-gradle:5.3.2'
+    }
+}
+
 plugins {
     id 'java'
     id 'groovy'
@@ -9,6 +18,7 @@ plugins {
 }
 
 apply plugin: 'idea'
+apply plugin: 'org.owasp.dependencycheck'
 
 group 'mlk.hanif'
 version '1.0-SNAPSHOT'
