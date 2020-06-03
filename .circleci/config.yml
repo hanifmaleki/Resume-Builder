@@ -55,7 +55,7 @@ jobs:
       - run:
           name: Build application Docker image
           command: |
-          docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
+            docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
   deploy:
     executor: heroku/default
     steps:
@@ -65,6 +65,6 @@ jobs:
           command: >
             echo "The command above installs Heroku, the command below deploys.
             What you do inbetween is up to you!" |
-            heroku container:push 
+            heroku container:push
       #- heroku/deploy-via-git
 
