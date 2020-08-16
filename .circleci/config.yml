@@ -67,12 +67,12 @@ jobs:
           command: >
             echo "The command above installs Heroku, the command below deploys.
             What you do in between is up to you!"
-      - push-docker-image:
-          app-name: hanif-maleki
-          process-types: web
-      - release-docker-image:
-          app-name: hanif-maleki
-          process-types: web
+#      - push-docker-image:
+#          app-name: hanif-maleki
+#          process-types: web
+#      - release-docker-image:
+#          app-name: hanif-maleki
+#          process-types: web
 
       #      - run: heroku container:login
       #      - run: heroku container:push web -a hanif-maleki
