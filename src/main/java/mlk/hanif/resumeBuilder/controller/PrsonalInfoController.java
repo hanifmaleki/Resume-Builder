@@ -13,7 +13,7 @@ public class PrsonalInfoController {
     @Autowired
     private ContextMaker contextMaker;
 
-    @GetMapping("/")
+    @GetMapping("/home")
     public String getPersonalInfo(Model model){
         PersonalInfo personalInfo = contextMaker.getContext().getPersonalInfo();
         model.addAttribute("personalInfo", personalInfo);
