@@ -64,7 +64,7 @@ jobs:
     steps:
       - checkout
       - heroku/install
-      - run: sudo curl https://cli-assets.heroku.com/install.sh | sh
+      - run: sudo curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
       - run: heroku container:login
       - run: heroku container:push web -a hanif-maleki
       - run: heroku container:release web -a hanif-maleki
