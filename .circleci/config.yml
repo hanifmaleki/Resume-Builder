@@ -6,10 +6,11 @@ version: 2.1
 orbs:
   heroku: circleci/heroku@1.2.1 # Invoke the Heroku orb
 workflows:
-  jobs:
-    - heroku/push-docker-image
-#        app-name: hanif-maleki
-#        process-types: web
+  heroku_deploy:
+    jobs:
+      - heroku/push-docker-image
+  #        app-name: hanif-maleki
+  #        process-types: web
 
 jobs:
   build:
