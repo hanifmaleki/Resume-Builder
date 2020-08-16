@@ -61,6 +61,7 @@ jobs:
     machine:
       image: ubuntu-1604:201903-01
     steps:
+      - run: docker ps
       - checkout
       - heroku/install
       - run: sudo curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
