@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <title>My Home</title>
 </head>
+<header th:insert="common.html :: header"/>
 <body>
 <ul th:each="name: ${names}">
     <li th:text="${name}"/>
 </ul>
 
-<a href="\">Home</a>
-<a href="language">Languages</a>
-
-<div th:replace="common.html :: footer"/>
-
+<div th:replace="common.html :: footer('education')"/>
 </body>
 </html>

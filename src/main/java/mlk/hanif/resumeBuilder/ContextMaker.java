@@ -12,10 +12,10 @@ import java.util.Arrays;
 public class ContextMaker {
 
 
-    private Resume resume = null ;
+    private Resume resume = null;
 
     public Resume getContext() {
-        if (resume==null){
+        if (resume == null) {
             resume = fetchResume();
         }
         return resume;
@@ -30,6 +30,7 @@ public class ContextMaker {
         resume.setAcademicProjects(Arrays.asList(readDataFromJsonFile("academicProjects.json", AcademicProject[].class)));
         resume.setCertificates(Arrays.asList(readDataFromJsonFile("certificates.json", Certificate[].class)));
         resume.setSkills(Arrays.asList(readDataFromJsonFile("skills.json", Skill[].class)));
+        resume.setInterests(Arrays.asList(readDataFromJsonFile("interests.json", Interest[].class)));
 
         return resume;
     }

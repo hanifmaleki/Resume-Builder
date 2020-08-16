@@ -3,16 +3,14 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Languages</title>
+    <title>Certificates</title>
 </head>
-<body>
 <header th:insert="common.html :: header"/>
-
-<ul th:each="language: ${languages}">
-    <li th:text="${language}"/>
+<body>
+<ul th:each="certificate: ${certificates}">
+    <li th:text="${certificate}"/>
 </ul>
 
-<div th:replace="common.html :: footer('language')"/>
-
+<div th:replace="common.html :: footer('certificate')"/>
 </body>
 </html>

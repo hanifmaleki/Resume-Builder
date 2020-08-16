@@ -18,13 +18,14 @@ public class GlobalControllerAdvice {
 
     Map<String, String> pages = new HashMap<String, String>(){
         {
-            put("home", "personalInfo");
+            put("home", "/");
             put("education", "education");
             put("skill", "skill");
             put("experience", "experience");
             put("language", "language");
-            put("academicProjects", "academicProjects");
-            put("certificates", "certificates");
+            put("academicProject", "academicProject");
+            put("certificate", "certificate");
+            put("interest", "interest");
         }
     };
 
