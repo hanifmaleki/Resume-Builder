@@ -64,10 +64,7 @@ jobs:
     steps:
       - checkout
       - heroku/install
-      - run:
-        name: Build and push Docker image to Heroku
-        command: |
-          sudo curl https://cli-assets.heroku.com/install.sh | sh
+      - run: sudo curl https://cli-assets.heroku.com/install.sh | sh
       - run: heroku container:login
       - run: heroku container:push web -a hanif-maleki
       - run: heroku container:release web -a hanif-maleki
