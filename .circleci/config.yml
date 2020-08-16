@@ -63,6 +63,7 @@ jobs:
     machine: true
     steps:
       - checkout
+      - heroku/install
       - run:
       name: Build and push Docker image to Heroku
       command: |
