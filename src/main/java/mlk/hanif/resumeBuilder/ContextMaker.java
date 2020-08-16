@@ -23,14 +23,14 @@ public class ContextMaker {
 
     private Resume fetchResume() {
         Resume resume = new Resume();
-        resume.setPersonalInfo(readDataFromJsonFile("personalInfo.json", PersonalInfo.class));
-        resume.setEducations(Arrays.asList(readDataFromJsonFile("educations.json", Education[].class)));
-        resume.setExperiences(Arrays.asList(readDataFromJsonFile("experiences.json", Experience[].class)));
-        resume.setLanguages(Arrays.asList(readDataFromJsonFile("languages.json", Language[].class)));
-        resume.setAcademicProjects(Arrays.asList(readDataFromJsonFile("academicProjects.json", AcademicProject[].class)));
-        resume.setCertificates(Arrays.asList(readDataFromJsonFile("certificates.json", Certificate[].class)));
-        resume.setSkills(Arrays.asList(readDataFromJsonFile("skills.json", Skill[].class)));
-        resume.setInterests(Arrays.asList(readDataFromJsonFile("interests.json", Interest[].class)));
+        resume.setPersonalInfo(readDataFromJsonFile("jsons/personalInfo.json", PersonalInfo.class));
+        resume.setEducations(Arrays.asList(readDataFromJsonFile("jsons/educations.json", Education[].class)));
+        resume.setExperiences(Arrays.asList(readDataFromJsonFile("jsons/experiences.json", Experience[].class)));
+        resume.setLanguages(Arrays.asList(readDataFromJsonFile("jsons/languages.json", Language[].class)));
+        resume.setAcademicProjects(Arrays.asList(readDataFromJsonFile("jsons/academicProjects.json", AcademicProject[].class)));
+        resume.setCertificates(Arrays.asList(readDataFromJsonFile("jsons/certificates.json", Certificate[].class)));
+        resume.setSkills(Arrays.asList(readDataFromJsonFile("jsons/skills.json", Skill[].class)));
+        resume.setInterests(Arrays.asList(readDataFromJsonFile("jsons/interests.json", Interest[].class)));
 
         return resume;
     }
