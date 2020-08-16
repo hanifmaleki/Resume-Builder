@@ -4,7 +4,7 @@
 #
 version: 2.1
 orbs:
-  heroku: circleci/heroku@1.0.1 # Invoke the Heroku orb
+  heroku: circleci/heroku@1.2.1 # Invoke the Heroku orb
 workflows:
   heroku_deploy:
     jobs:
@@ -59,13 +59,22 @@ jobs:
   deploy:
     executor: heroku/default
     steps:
+      - install
+      - check-authentication
       - checkout
       - heroku/install
       - run:
           command: >
             echo "The command above installs Heroku, the command below deploys.
             What you do in between is up to you!"
-      - run: heroku container:login
-      - run: heroku container:push web -a hanif-maleki
-      - run: heroku container:release web -a hanif-maleki
+      - push-docker-image:
+          app-name: hanif-maleki
+          process-types: web
+      - release-docker-image:
+          app-name: hanif-maleki
+          process-types: web
+
+      #      - run: heroku container:login
+      #      - run: heroku container:push web -a hanif-maleki
+      #      - run: heroku container:release web -a hanif-maleki
       #- heroku/deploy-via-git
