@@ -64,6 +64,7 @@ jobs:
       - run: docker ps
       - checkout
       - heroku/install
+      - run: heroku login
       - run: sudo curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
       - run: heroku container:login
       - run: heroku container:push web -a hanif-maleki
