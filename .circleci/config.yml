@@ -64,8 +64,8 @@ jobs:
       - run:
           command: >
             echo "The command above installs Heroku, the command below deploys.
-            What you do inbetween is up to you!"
-
+            What you do in between is up to you!"
+      - run: heroku container:login
       - run: heroku container:push web -a hanif-maleki
       - run: heroku container:release web -a hanif-maleki
       #- heroku/deploy-via-git
