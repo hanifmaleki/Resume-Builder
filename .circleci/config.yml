@@ -43,8 +43,8 @@ jobs:
   deploy:
     machine:
       image: ubuntu-1604:201903-01
-    stepss:
-#      - run: docker ps
+    steps:
+      - run: docker ps
       - checkout
 #      - heroku/install
 #      - run: sudo service docker start
