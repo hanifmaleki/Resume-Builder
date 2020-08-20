@@ -40,3 +40,18 @@ jobs:
 
       # run tests!
       - run: gradle test
+  deploy:
+    machine:
+      image: ubuntu-1604:201903-01
+    steps:
+      - run: docker ps
+      - checkout
+      - heroku/install
+      - run: sudo service docker start
+      - run: heroku login
+      - run: git push heroku master
+      - run: sudo curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+  #      - run: sudo chmod 666 /var/run/docker.sock
+  #      - run: sudo heroku container:login
+  #      - run: heroku container:push web -a hanif-maleki
+  #      - run: heroku container:release web -a hanif-maleki
