@@ -16,7 +16,7 @@ jobs:
       TERM: dumb
 
     steps:
-      - run: apt-get install openjdk-8-jdk
+      - run: sudo apt-get install openjdk-8-jdk
       - checkout
 
       # Download and cache dependencies
