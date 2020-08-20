@@ -41,9 +41,8 @@ jobs:
       # run tests!
       - run: gradle test
   deploy:
-    docker:
-      # specify the version you desire here
-      - image: circleci/openjdk:8-jdk
+    machine:
+      image: ubuntu-1604:201903-01
     steps:
       - run: docker ps
       - checkout
