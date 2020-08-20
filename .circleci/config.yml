@@ -2,20 +2,17 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
-version: 2.1
-orbs:
-  heroku: circleci/heroku@1.2.1 # Invoke the Heroku orb
-workflows:
-  heroku_deploy:
-    jobs:
-      - heroku/push-docker-image
-  #        app-name: hanif-maleki
-  #        process-types: web
-
+version: 2
 jobs:
   build:
     docker:
+      # specify the version you desire here
       - image: circleci/openjdk:8-jdk
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/postgres:9.4
 
     working_directory: ~/repo
 
@@ -41,14 +38,5 @@ jobs:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
-      - run: gradle clean assemble
-
-
       # run tests!
       - run: gradle test
-
-      # Build docker image
-      - run:
-          name: Build application Docker image
-          command: |
-            docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
