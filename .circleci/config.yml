@@ -1,74 +1,7 @@
-# Java Gradle CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-java/ for more details
-#
 version: 2.1
 orbs:
-  heroku: circleci/heroku@1.2.1 # Invoke the Heroku orb
+  node: circleci/node@3.0.0
 workflows:
-  heroku_deploy:
+  node-tests:
     jobs:
-      - heroku/push-docker-image
-  #        app-name: hanif-maleki
-  #        process-types: web
-
-jobs:
-  build:
-    docker:
-      - image: circleci/openjdk:8-jdk
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
-
-    working_directory: ~/repo
-
-    environment:
-      # Customize the JVM maximum heap limit
-      JVM_OPTS: -Xmx3200m
-      TERM: dumb
-
-    steps:
-      - checkout
-
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "build.gradle" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-
-      - run: gradle dependencies
-
-      - save_cache:
-          paths:
-            - ~/.gradle
-          key: v1-dependencies-{{ checksum "build.gradle" }}
-
-      - run: gradle clean assemble
-
-
-      # run tests!
-      - run: gradle test
-
-      # Build docker image
-      - run:
-          name: Build application Docker image
-          command: |
-            docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
-  deploy:
-    machine:
-      image: ubuntu-1604:201903-01
-    steps:
-      - run: docker ps
-      - checkout
-      - heroku/install
-      - run: sudo service docker start
-      - run: heroku login
-      - run: git push heroku master
-#      - run: sudo curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
-#      - run: sudo chmod 666 /var/run/docker.sock
-#      - run: sudo heroku container:login
-#      - run: heroku container:push web -a hanif-maleki
-#      - run: heroku container:release web -a hanif-maleki
+      - node/test
