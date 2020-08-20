@@ -38,6 +38,7 @@ jobs:
           apt-get update
           apt-get install -y docker-ce
           docker --version
+
       - checkout
 
       # Download and cache dependencies
