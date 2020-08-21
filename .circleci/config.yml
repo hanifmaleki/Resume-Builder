@@ -84,6 +84,8 @@ jobs:
                       login hanif_1362@yahoo.com
                       password $HEROKU_API_KEY" > ~/.netrc
         - run: cat ~/.netrc
+        - run: set HEROKU_API_KEY=$HEROKU_API_KEY
+        - run: echo $HEROKU_API_KEY
 #        - run: heroku auth:whoami
 #        - run:  heroku logout
 #        - run: heroku auth:token
