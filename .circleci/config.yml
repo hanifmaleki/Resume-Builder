@@ -69,6 +69,7 @@ jobs:
     steps:
         - checkout
         - heroku/install
+        - heroku/deploy-via-git
 
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
