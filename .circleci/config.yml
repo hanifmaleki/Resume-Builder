@@ -82,10 +82,10 @@ jobs:
             command: |
               echo "machine git.heroku.com
                       login hanif_1362@yahoo.com
-                      password $HEROKU_API_KEY" > ~/.netrc
+                      password cc1b32a8-b583-4ccd-aa54-ec2fc2798ee5 > ~/.netrc
         - run: cat ~/.netrc
-        - run: set HEROKU_API_KEY=$HEROKU_API_KEY
-        - run: echo $HEROKU_API_KEY
+#        - run: set HEROKU_API_KEY=$HEROKU_API_KEY
+#        - run: echo $HEROKU_API_KEY
 #        - run: heroku auth:whoami
 #        - run:  heroku logout
 #        - run: heroku auth:token
