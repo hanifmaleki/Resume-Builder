@@ -73,8 +73,8 @@ jobs:
 #    executor: heroku/default
     machine:
       image: ubuntu-1604:201903-01
-    environment:
-      HEROKU_API_KEY: $HEROKU_API_KEY
+#    environment:
+#      HEROKU_API_KEY: $HEROKU_API_KEY
     steps:
         - checkout
         - heroku/install
