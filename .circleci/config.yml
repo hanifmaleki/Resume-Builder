@@ -87,7 +87,7 @@ jobs:
 #        - run: heroku auth:whoami
 #        - run:  heroku logout
 #        - run: heroku auth:token
-        - run: heroku login
+#        - run: heroku login
 #        - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku login HEROKU_API_KEY=$HEROKU_API_KEY
         - heroku/deploy-via-git
 #        - run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master:master
