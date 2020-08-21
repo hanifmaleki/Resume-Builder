@@ -77,16 +77,14 @@ jobs:
 #      HEROKU_API_KEY: $HEROKU_API_KEY
     steps:
         - checkout
-#        - heroku/install
-#        - run: heroku update
-        - run: sudo apt update
-        - run: sudo apt install heroku
+        - heroku/install
+        - run: heroku update
         - run: heroku version
 #        - run: heroku auth:whoami
 #        - run:  heroku logout
         - run: heroku auth:token
-        - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku login
-        - run: git push heroku master
+        - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1  HEROKU_API_KEY=$HEROKU_API_KEY heroku login
+        - run: git push heroku HEROKU_APP_NAME:master
 
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
