@@ -74,14 +74,11 @@ jobs:
     machine:
       image: ubuntu-1604:201903-01
     environment:
-      HEROKU_APP: "hanif-maleki" # define env var $HEROKU_APP
-      HEROKU_API_KEY: $HEROKU_API_KEY
-      CIRCLE_BRANCH: master
-      CIRCLE_TAG: ""
+      heroku_url="https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git"
     steps:
         - checkout
         - heroku/install
-        - heroku/deploy-via-git
+        - run: git push $heroku_url master
 
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
