@@ -77,7 +77,7 @@ jobs:
       HEROKU_APP: "hanif-maleki" # define env var $HEROKU_APP
       HEROKU_API_KEY: $HEROKU_API_KEY
       CIRCLE_BRANCH: master
-      CIRCLE_TAG:
+      CIRCLE_TAG: ""
     steps:
         - checkout
         - heroku/install
