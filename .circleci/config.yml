@@ -86,7 +86,7 @@ jobs:
                 login hanif_1362@yahoo.com
                 password $HEROKU_API_KEY
 
-              machine git.heroku.com
+              machine api.heroku.com
                 login hanif_1362@yahoo.com
                 password $HEROKU_API_KEY" > ~/.netrc
 #        - run: heroku login
