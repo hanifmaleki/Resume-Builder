@@ -89,8 +89,8 @@ jobs:
               machine git.heroku.com
                 login hanif_1362@yahoo.com
                 password $HEROKU_API_KEY" > ~/.netrc
-        - run: heroku login
-        - run: git clone https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
+#        - run: heroku login
+#        - run: git clone https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
 
       #        - run: cat ~/.netrc
 #        - run: set HEROKU_API_KEY=$HEROKU_API_KEY
