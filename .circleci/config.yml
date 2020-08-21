@@ -73,10 +73,12 @@ jobs:
 #    executor: heroku/default
     machine:
       image: ubuntu-1604:201903-01
+    environment:
+      HEROKU_APP: "hanif-maleki" # define env var $HEROKU_APP
     steps:
         - checkout
         - heroku/install
-        - run: heroku login
+#        - run: heroku login
         - run: git push heroku master
 
 #      - run: sudo heroku container:login
