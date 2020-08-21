@@ -80,9 +80,7 @@ jobs:
         - run:
             name: Add credentials
             command: |
-              echo "machine git.heroku.com
-                      login hanif_1362@yahoo.com
-                      password cc1b32a8-b583-4ccd-aa54-ec2fc2798ee5" > ~/.netrc
+              echo "machine git.heroku.com login hanif_1362@yahoo.com password cc1b32a8-b583-4ccd-aa54-ec2fc2798ee5" > ~/.netrc
         - run: cat ~/.netrc
 #        - run: set HEROKU_API_KEY=$HEROKU_API_KEY
 #        - run: echo $HEROKU_API_KEY
