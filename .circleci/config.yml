@@ -82,7 +82,7 @@ jobs:
 #        - run:  heroku logout
 #        - run: heroku auth:token
 #        - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku login HEROKU_API_KEY=$HEROKU_API_KEY
-        - heroku/deploy_via_git
+        - heroku/deploy-via-git
 
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
