@@ -83,8 +83,8 @@ jobs:
 #        - run: heroku auth:whoami
 #        - run:  heroku logout
         - run: heroku auth:token
-        - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku HEROKU_API_KEY=$HEROKU_API_KEY login
-        - run: git push $heroku_url master
+        - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku login
+        - run: git push heroku master
 
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
