@@ -79,7 +79,7 @@ jobs:
         - checkout
         - heroku/install
         - run: heroku version
-        - run: heroku auth:whoami
+#        - run: heroku auth:whoami
         - run:  heroku logout
         - run: heroku login
         - run: git push $heroku_url master
