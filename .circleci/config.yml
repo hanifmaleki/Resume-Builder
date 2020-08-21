@@ -75,9 +75,11 @@ jobs:
       image: ubuntu-1604:201903-01
     environment:
       heroku_url="https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git"
+      HEROKU_API_KEY: $HEROKU_API_KEY
     steps:
         - checkout
         - heroku/install
+        - run: heroku login
         - run: git push $heroku_url master
 
 #      - run: sudo heroku container:login
