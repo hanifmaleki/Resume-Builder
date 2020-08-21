@@ -4,7 +4,7 @@
 #
 version: 2.1
 orbs:
-  heroku: circleci/heroku@1.2.1
+  heroku: circleci/heroku@1.2.2
 jobs:
   build:
     docker:
@@ -73,8 +73,6 @@ jobs:
 #    executor: heroku/default
     machine:
       image: ubuntu-1604:201903-01
-#    environment:
-#      HEROKU_API_KEY: $HEROKU_API_KEY
     steps:
         - checkout
         - heroku/install
