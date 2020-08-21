@@ -80,10 +80,16 @@ jobs:
         - run: pwd
         - run: ls -all
         - run: git clone https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git/
-#        - run:
-#            name: Add credentials
-#            command: |
-#              echo "machine git.heroku.com login hanif_1362@yahoo.com password cc1b32a8-b583-4ccd-aa54-ec2fc2798ee5" > ~/.netrc
+        - run:
+            name: Add credentials
+            command: |
+              echo "machine git.heroku.com
+                login hanif_1362@yahoo.com
+                password $HEROKU_API_KEY
+
+              machine git.heroku.com
+                login hanif_1362@yahoo.com
+                password $HEROKU_API_KEY" > ~/.netrc
 #        - run: cat ~/.netrc
 #        - run: set HEROKU_API_KEY=$HEROKU_API_KEY
 #        - run: echo $HEROKU_API_KEY
