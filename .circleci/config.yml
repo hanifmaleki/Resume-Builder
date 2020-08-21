@@ -68,7 +68,7 @@ jobs:
     executor: heroku/default
     steps:
         - checkout
-        - docker ps
+        - run: docker ps
         - heroku/install
         - heroku/deploy-via-git
 
