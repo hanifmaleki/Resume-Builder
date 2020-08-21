@@ -64,12 +64,18 @@ jobs:
 #          command: |
 #            docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
 
-#  deploy:
-#    machine:
-#      image: ubuntu-1604:201903-01
-#    steps:
-#      - checkout
-#
+  deploy:
+    machine:
+      image: ubuntu-1604:201903-01
+    steps:
+        - checkout
+        - heroku/install
+        - run:
+          command: >
+            echo "The command above installs Heroku, the command below deploys.
+            What you do inbetween is up to you!"
+        - heroku/deploy-via-git
+
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
 #      - run: heroku container:release web -a hanif-maleki
@@ -78,6 +84,6 @@ workflows:
   workflow:
     jobs:
       - build
-      - heroku/deploy-via-git:
+      - deploy:
           requires:
             - build
