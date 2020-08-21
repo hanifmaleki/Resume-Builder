@@ -78,11 +78,11 @@ jobs:
         - run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
         - run: heroku version
         - run:
-          name: Add credentials
-          command: |
-            echo 'machine git.heroku.com
-                    login hanif_1362@yahoo.com
-                    password $HEROKU_API_KEY' > ~/.netrc
+            name: Add credentials
+            command: |
+              echo 'machine git.heroku.com
+                      login hanif_1362@yahoo.com
+                      password $HEROKU_API_KEY' > ~/.netrc
 #        - run: heroku auth:whoami
 #        - run:  heroku logout
 #        - run: heroku auth:token
