@@ -76,11 +76,11 @@ jobs:
     environment:
       HEROKU_APP: "hanif-maleki" # define env var $HEROKU_APP
       HEROKU_API_KEY: $HEROKU_API_KEY
+      CIRCLE_BRANCH: master
     steps:
         - checkout
         - heroku/install
-        - run: heroku login
-        - run: git push heroku master
+        - heroku/deploy-via-git
 
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
