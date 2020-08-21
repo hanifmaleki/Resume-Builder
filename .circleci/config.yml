@@ -78,11 +78,11 @@ jobs:
 #        - heroku/install
         - run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
         - run: heroku version
-        - run: heroku auth:whoami
+#        - run: heroku auth:whoami
 #        - run:  heroku logout
-        - run: heroku auth:token
-        - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku login HEROKU_API_KEY=$HEROKU_API_KEY
-        - run: git push heroku HEROKU_APP_NAME:master
+#        - run: heroku auth:token
+#        - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku login HEROKU_API_KEY=$HEROKU_API_KEY
+        - heroku/deploy_via_git
 
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
