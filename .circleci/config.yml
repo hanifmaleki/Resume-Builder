@@ -77,7 +77,7 @@ jobs:
         - checkout
         - heroku/install
         - heroku/deploy-via-git
-          branch: master
+            branch: master
 
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
