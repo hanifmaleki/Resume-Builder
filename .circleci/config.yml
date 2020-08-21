@@ -75,8 +75,8 @@ jobs:
       image: ubuntu-1604:201903-01
     steps:
         - checkout
-        - heroku/install
-        - run: heroku update
+#        - heroku/install
+        - run: sudo snap install --classic heroku
         - run: heroku version
 #        - run: heroku auth:whoami
 #        - run:  heroku logout
