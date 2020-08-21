@@ -73,15 +73,17 @@ jobs:
 #    executor: heroku/default
     executor: heroku/default
     steps:
-        - checkout
 #        - heroku/install
         - run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
         - run: heroku version
-        - run:
-            name: Add credentials
-            command: |
-              echo "machine git.heroku.com login hanif_1362@yahoo.com password cc1b32a8-b583-4ccd-aa54-ec2fc2798ee5" > ~/.netrc
-        - run: cat ~/.netrc
+        - checkout
+        - run: pwd
+        - run: ls -all
+#        - run:
+#            name: Add credentials
+#            command: |
+#              echo "machine git.heroku.com login hanif_1362@yahoo.com password cc1b32a8-b583-4ccd-aa54-ec2fc2798ee5" > ~/.netrc
+#        - run: cat ~/.netrc
 #        - run: set HEROKU_API_KEY=$HEROKU_API_KEY
 #        - run: echo $HEROKU_API_KEY
 #        - run: heroku auth:whoami
