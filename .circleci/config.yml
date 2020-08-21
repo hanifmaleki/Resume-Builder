@@ -78,6 +78,7 @@ jobs:
     steps:
         - checkout
         - heroku/install
+        - run: heroku update
         - run: heroku version
 #        - run: heroku auth:whoami
 #        - run:  heroku logout
