@@ -78,6 +78,7 @@ jobs:
     steps:
         - checkout
         - heroku/install
+        - run: heroku auth:whoami
         - run: heroku login
         - run: git push $heroku_url master
 
