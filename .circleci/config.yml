@@ -95,5 +95,4 @@ workflows:
           requires:
             - build
           context: Heroku
-          parameters:
-            process-types: web
+          process-types: web
