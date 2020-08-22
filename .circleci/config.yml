@@ -83,7 +83,7 @@ jobs:
         - checkout
 #        - heroku/deploy-via-git
         - heroku/push-docker-image
-            parameters:
+            environment:
               process-types: "web"
 #      - run: sudo heroku container:login
 #      - run: heroku container:push web -a hanif-maleki
