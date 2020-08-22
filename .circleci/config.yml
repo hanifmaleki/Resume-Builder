@@ -82,11 +82,11 @@ jobs:
         - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku apps
         - checkout
 #        - heroku/deploy-via-git
-        - heroku/push-docker-image
-            process-types: web
+#        - heroku/push-docker-image
+#            process-types: web
 #      - run: sudo heroku container:login
-#      - run: heroku container:push web -a hanif-maleki
-#      - run: heroku container:release web -a hanif-maleki
+      - run: heroku container:push web -a hanif-maleki
+      - run: heroku container:release web -a hanif-maleki
 workflows:
   version: 2
   workflow:
