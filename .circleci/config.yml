@@ -33,7 +33,7 @@ jobs:
           name: Install Heroku CLI
           command: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
       - setup_remote_docker
-#      - checkout
+      - checkout
 #
 #      # Download and cache dependencies
 #      - restore_cache:
