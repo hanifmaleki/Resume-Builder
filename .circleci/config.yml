@@ -77,7 +77,7 @@ jobs:
 #        - heroku/install
         - run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
         - run: heroku version
-        - run: echo $HEROKU_API_KEY
+        - run: echo '$HEROKU_API_KEY'
         - run: heroku apps
 #        - checkout
 #        - run: pwd
