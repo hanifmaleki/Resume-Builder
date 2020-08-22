@@ -25,16 +25,17 @@ jobs:
       HEROKU_APP_NAME: "hanif-maleki"
 
     steps:
+      - checkout
       - run:
           name: Install jFrog CLI
           command: curl -fL https://getcli.jfrog.io | sh
-
+      - run: ls -all
       - run:
           name: Install Heroku CLI
           command: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+      - run: ls -all
       - setup_remote_docker
-      - checkout
-
+      - run: ls -all
       # Download and cache dependencies
       - restore_cache:
           keys:
