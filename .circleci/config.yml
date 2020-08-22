@@ -60,7 +60,9 @@ jobs:
       # run tests!
       - run: gradle test
       - run: ls -all
+      - run: ls build -all
       - run: ls libs -all
+      - run: ls build/libs -all
       - run:
          name: Install jFrog CLI
          command: curl -fL https://getcli.jfrog.io | sh
