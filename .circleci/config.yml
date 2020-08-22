@@ -49,13 +49,13 @@ jobs:
           paths:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
-#
-#      - run:
-#          name: Build Project
-#          cpmmand: gradle build -xtest
-#
-#      # run tests!
-#      - run:
+
+
+      # run tests!
+      - run:
+          name: Build Project
+          command: gradle build -xtest
+#            - run:
 #          name: Test the Project
 #          command: gradle test
 #
