@@ -90,7 +90,7 @@ workflows:
   workflow:
     jobs:
       - build:
-          - context: Heroku
+          context: Heroku
 #      - deploy:
 #          requires:
 #            - build
