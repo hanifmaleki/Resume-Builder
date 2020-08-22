@@ -8,4 +8,5 @@ public class Company {
     private String website;
     private String city;
     private String description;
+    private String icon;
 }

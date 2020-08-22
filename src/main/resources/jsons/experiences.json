@@ -7,7 +7,8 @@
       "title": "BearingPoint(RegTech)",
       "website": "https://www.reg.tech/en/",
       "city": "Graz",
-      "description": "????"
+      "description": "????",
+      "icon":  "images/company/bearingpoint.svg"
     },
     "projects": [
       {
@@ -74,7 +75,8 @@
       "title": "SMART ASSETS GmbH",
       "website": "http://www.smartassets.at/",
       "city": "Vienna",
-      "description": "SMART ASSETS creates and develops innovative, mobile solutions and provides consulting, business development and incubation services for telecommunications and web projects."
+      "description": "SMART ASSETS creates and develops innovative, mobile solutions and provides consulting, business development and incubation services for telecommunications and web projects.",
+      "icon": "images/company/smartassets.png"
     },
     "dateFrom": "2016-07-01",
     "dateTo": "2016-11-30",
@@ -112,7 +114,8 @@
       "title": "Negin Software Development Co.",
       "city": "Tehran",
       "website": "https://www.tosan.com/en",
-      "description": "TOSAN Corporation was founded in 1998 specializing in the provision of end-to-end banking solutions for both conventional and Islamic financial institutions. TOSAN is the first and largest market-leading provider of banking software solutions to retail, corporate, private, microfinance banks in Iran."
+      "description": "TOSAN Corporation was founded in 1998 specializing in the provision of end-to-end banking solutions for both conventional and Islamic financial institutions. TOSAN is the first and largest market-leading provider of banking software solutions to retail, corporate, private, microfinance banks in Iran.",
+      "icon": "images/company/tosan.svg"
     },
     "dateFrom": "2014-08-01",
     "dateTo": "2015-10-31",
@@ -171,7 +174,8 @@
       "title": "Eticke Parse Technology Development Co.",
       "website": "www.etick.ir",
       "city": "Tehran",
-      "description": "Etick is a company specialize in micropayment applications."
+      "description": "Etick is a company specialize in micropayment applications.",
+      "icon": "images/company/etick.png"
     },
     "projects": [
       {
@@ -222,7 +226,8 @@
       "title": "Mobile Value Added Service Laboratory, Sharif University of Technology",
       "city": "Tehran",
       "website": "http://vaslab.ir",
-      "description": "VASLAB is a research and development laboratory at Sharif University of technology specialize in the mobile value-added services. Sharif University is one of the best technical university in the Middle East."
+      "description": "VASLAB is a research and development laboratory at Sharif University of technology specialize in the mobile value-added services. Sharif University is one of the best technical university in the Middle East.",
+      "icon": "images/company/vaslab.png"
     },
     "projects": [
       {
@@ -303,11 +308,13 @@
     "jobTitle": "Technical Director",
     "city": "Tehran",
     "company": {
-      "title": "Raj Samaneh Software Corporation"
+      "title": "Raj Samaneh Software Corporation",
+      "icon": "images/company/raj.gif"
     },
     "projects": [
       {
         "title": "Raj Samaneh Accounting System",
+        "website": "https://raj-samaneh.com/",
         "description": "An accounting software for storing transactions and providing various reports supporting multi-users and web-based user interface."
       }
     ],

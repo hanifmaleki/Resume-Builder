@@ -154,8 +154,18 @@
             <div class="row">
                 <div class="item col-6 col-lg-3" th:each="experience: ${resume.experiences}">
                     <div class="item-inner">
-                        <div class="item-icon"><i class="fab fa-js-square"></i></div>
-                        <h3 class="item-title" th:text="${experience.company.title}"/>
+                        <div class="item-icon">
+                            <p th:text="${experience.company.icon}"/>
+                            <div th:if="${experience.company.icon != ''}">
+                                <img style="width:50%;" th:src="${experience.company.icon}"/>
+                            </div>
+                            <div th:if="${experience.company.icon == null}">
+                                <i class="far fa-building"></i>
+                            </div>
+                        </div>
+                        <h3 class="item-title">
+                            <a th:href="${experience.company.website}" th:text="${experience.company.title}"/>
+                        </h3>
                         <div class="item-desc">List skills/technologies here. You can change the icon above to any of
                             the 1500+ <a class="theme-link" href="https://fontawesome.com/" target="_blank">FontAwesome
                                 5 free icons</a> available. Aenean commodo ligula eget dolor.
