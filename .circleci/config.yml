@@ -42,22 +42,22 @@ jobs:
             - v1-dependencies-{{ checksum "build.gradle" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-#
-#      - run: gradle dependencies
-#
-#      - save_cache:
-#          paths:
-#            - ~/.gradle
-#          key: v1-dependencies-{{ checksum "build.gradle" }}
-#
-#      - run:
-#          name: Build Project
-#          cpmmand: gradle build -xtest
-#
-#      # run tests!
-#      - run:
-#          name: Test the Project
-#          command: gradle test
+
+      - run: gradle dependencies
+
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: v1-dependencies-{{ checksum "build.gradle" }}
+
+      - run:
+          name: Build Project
+          cpmmand: gradle build -xtest
+
+      # run tests!
+      - run:
+          name: Test the Project
+          command: gradle test
 #
 #      # Create Docker Image
 #      - run:
