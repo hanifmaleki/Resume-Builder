@@ -85,7 +85,7 @@ jobs:
 #        - run: echo "$HEROKU_API_KEY"
 #        - run: echo '$HEROKU_API_KEY'
         - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku apps
-#        - checkout
+        - checkout
 #        - run: pwd
 #        - run: ls -all
 #        - run:
