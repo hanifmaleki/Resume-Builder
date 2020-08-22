@@ -56,9 +56,11 @@ jobs:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
+      - run: gradle build
       # run tests!
       - run: gradle test
-
+      - run: ls -all
+      - run: ls libs -all
       - run:
          name: Install jFrog CLI
          command: curl -fL https://getcli.jfrog.io | sh
