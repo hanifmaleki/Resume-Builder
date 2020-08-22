@@ -60,13 +60,13 @@ jobs:
       - run:
           name: Test the Project
           command: gradle test
-#
-#      # Create Docker Image
-#      - run:
-#          name: Build application Docker image
-#          command: |
-#            docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
-#
+
+      # Create Docker Image
+      - run:
+          name: Build application Docker image
+          command: |
+            docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
+
 #      - run: heroku container:push web -a $HEROKU_APP_NAME
 #      - run: heroku container:release web -a $HEROKU_APP_NAME
 
