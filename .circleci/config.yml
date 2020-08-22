@@ -85,8 +85,8 @@ jobs:
 #        - heroku/push-docker-image
 #            process-types: web
 #      - run: sudo heroku container:login
-      - run: heroku container:push web -a hanif-maleki
-      - run: heroku container:release web -a hanif-maleki
+        - run: heroku container:push web -a hanif-maleki
+        - run: heroku container:release web -a hanif-maleki
 workflows:
   version: 2
   workflow:
