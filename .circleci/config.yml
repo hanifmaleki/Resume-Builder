@@ -43,30 +43,30 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: gradle dependencies
-
-      - save_cache:
-          paths:
-            - ~/.gradle
-          key: v1-dependencies-{{ checksum "build.gradle" }}
-
-      - run:
-          name: Build Project
-          cpmmand: gradle build -xtest
-
-      # run tests!
-      - run:
-          name: Test the Project
-          command: gradle test
-
-      # Create Docker Image
-      - run:
-          name: Build application Docker image
-          command: |
-            docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
-
-      - run: heroku container:push web -a $HEROKU_APP_NAME
-      - run: heroku container:release web -a $HEROKU_APP_NAME
+#      - run: gradle dependencies
+#
+#      - save_cache:
+#          paths:
+#            - ~/.gradle
+#          key: v1-dependencies-{{ checksum "build.gradle" }}
+#
+#      - run:
+#          name: Build Project
+#          cpmmand: gradle build -xtest
+#
+#      # run tests!
+#      - run:
+#          name: Test the Project
+#          command: gradle test
+#
+#      # Create Docker Image
+#      - run:
+#          name: Build application Docker image
+#          command: |
+#            docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
+#
+#      - run: heroku container:push web -a $HEROKU_APP_NAME
+#      - run: heroku container:release web -a $HEROKU_APP_NAME
 
   deploy:
     #    executor: heroku/default
