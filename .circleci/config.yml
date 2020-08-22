@@ -51,13 +51,15 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
 
-      # run tests!
+      # build project!
       - run:
           name: Build Project
           command: gradle build -xtest
-#            - run:
-#          name: Test the Project
-#          command: gradle test
+
+      # run tests!
+      - run:
+          name: Test the Project
+          command: gradle test
 #
 #      # Create Docker Image
 #      - run:
