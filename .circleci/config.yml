@@ -61,7 +61,6 @@ jobs:
       - run: gradle test
       - run: ls -all
       - run: ls build -all
-      - run: ls libs -all
       - run: ls build/libs -all
       - run:
          name: Install jFrog CLI
