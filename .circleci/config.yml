@@ -73,9 +73,9 @@ jobs:
 #    executor: heroku/default
     machine:
       image: ubuntu-1604:201903-01
-    environment:
+#    environment:
 #      HEROKU_APP: "sleepy-refuge-55486" # define env var $HEROKU_APP
-      HEROKU_API_KEY:$HEROKU_API_KEY
+#      HEROKU_API_KEY:$HEROKU_API_KEY
     steps:
 #        - heroku/install
         - run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
