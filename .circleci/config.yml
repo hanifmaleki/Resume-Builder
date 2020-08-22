@@ -22,23 +22,16 @@ jobs:
       # Customize the JVM maximum heap limit
       JVM_OPTS: -Xmx3200m
       TERM: dumb
+      HEROKU_APP_NAME: "hanif-maleki"
 
     steps:
       - run:
-          name: Install docker
-          command: |
-             ls
-#            apt-get update --fix-missing
-#            apt-get install -y apt-transport-https ca-certificates software-properties-common
-#            curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-#            apt-key fingerprint 0EBFCD88
-#            add-apt-repository \
-#            "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-#            $(lsb_release -cs) \
-#            stable"
-#            apt-get update
-#            apt-get install -y docker-ce
-#            docker --version
+          name: Install jFrog CLI
+          command: curl -fL https://getcli.jfrog.io | sh
+
+      - run:
+          name: Install Heroku CLI
+          command: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
       - setup_remote_docker
       - checkout
 
@@ -56,12 +49,14 @@ jobs:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
-      - run: gradle build -xtest
-      # run tests!
-      - run: gradle test
       - run:
-         name: Install jFrog CLI
-         command: curl -fL https://getcli.jfrog.io | sh
+          name: Build Project
+          cpmmand: gradle build -xtest
+
+      # run tests!
+      - run:
+          name: Test the Project
+          command: gradle test
 
       # Create Docker Image
       - run:
@@ -69,30 +64,34 @@ jobs:
           command: |
             docker build --build-arg JAR_FILE=build/libs/*.jar -t springio/gs-spring-boot-docker .
 
+      - run: heroku container:push web -a $HEROKU_APP_NAME
+      - run: heroku container:release web -a $HEROKU_APP_NAME
+
   deploy:
-#    executor: heroku/default
+    #    executor: heroku/default
     machine:
       image: ubuntu-1604:201903-01
     environment:
       HEROKU_APP_NAME: "hanif-maleki"
-#      HEROKU_API_KEY: "$HEROKU_API_KEY"
+    #      HEROKU_API_KEY: "$HEROKU_API_KEY"
     steps:
-        - run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
-        - run: heroku version
-        - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku apps
-        - checkout
-#        - heroku/deploy-via-git
-#        - heroku/push-docker-image
-#            process-types: web
-#      - run: sudo heroku container:login
-        - run: heroku container:push web -a hanif-maleki
-        - run: heroku container:release web -a hanif-maleki
+      - run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+      - run: heroku version
+      - run: HEROKU_DEBUG=true HEROKU_DEBUG_HEADERS=1 heroku apps
+      - checkout
+      #        - heroku/deploy-via-git
+      #        - heroku/push-docker-image
+      #            process-types: web
+      #      - run: sudo heroku container:login
+      - run: heroku container:push web -a $HEROKU_APP_NAME
+      - run: heroku container:release web -a $HEROKU_APP_NAME
 workflows:
   version: 2
   workflow:
     jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          context: Heroku
+      - build:
+          - context: Heroku
+#      - deploy:
+#          requires:
+#            - build
+#          context: Heroku
