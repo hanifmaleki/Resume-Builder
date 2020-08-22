@@ -76,6 +76,7 @@ jobs:
     environment:
       HEROKU_APP_NAME: "hanif-maleki"
 #      HEROKU_API_KEY: "$HEROKU_API_KEY"
+      process-types: "web"
     steps:
         - run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
         - run: heroku version
