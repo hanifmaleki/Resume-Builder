@@ -185,8 +185,8 @@
                     <div class="item-inner">
                         <div class="item-desc">
                             <b class="text-center" th:text="${experience.jobTitle}"/><br>
-                            <i>From:</i> <span th:text="${experience.dateFrom}" /><br>
-                            <i>To:</i> <span th:text="${experience.dateTo}" />
+                            <i>From:</i> <span th:text="${#dates.format(experience.dateFrom, 'MMMMM yyyy')}" /><br>
+                            <i>To:</i> <span th:text="${#dates.format(experience.dateTo, 'MMMMM yyyy')}" />
                         </div>
                     </div><!--//item-inner-->
                 </div><!--//item-->
