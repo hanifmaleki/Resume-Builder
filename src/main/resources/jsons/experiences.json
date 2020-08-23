@@ -269,7 +269,8 @@
       {
         "title": "Scheduling and administration of classes and courses."
       }
-    ]
+    ],
+    "show": false
   },
   {
     "dateFrom": "2010-02-01",

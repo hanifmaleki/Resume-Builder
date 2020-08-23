@@ -16,4 +16,5 @@ public class Experience {
     private List<Projects> projects ;
     private List<Technology> technologies;
     private List<Achievement> achievements;
+    private boolean show=true;
 }
