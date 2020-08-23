@@ -152,8 +152,8 @@
                         href="portfolio.html">project portfolio</a>.
             </div>
             <div class="row">
-                <div class="item col-6 col-lg-3" th:each="experience: ${resume.experiences}" th:if="${experience.show==true}">
-                    <div class="item-inner">
+                <div class="item col-6 col-lg-6 border-light mb-4" th:each="experience: ${resume.experiences}" th:if="${experience.show==true}">
+                    <div class="item-header ">
                         <div class="item-icon">
                             <div th:if="${experience.company.icon != ''}">
                                 <img class="img-fluid" th:src="${experience.company.icon}"/>
@@ -164,10 +164,29 @@
                         </div>
                         <h3 class="item-title">
                             <a th:href="${experience.company.website}" th:text="${experience.company.title}"/>
+                            <span class="h6" th:text="${experience.company.city}">
                         </h3>
+
+                        <ul class="nav nav-tabs card-header-tabs float-xs-left">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Date</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Technologies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Achievments</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-inner">
                         <div class="item-desc">
-                            From: <h5 th:text="${experience.dateFrom}" />
-                            To: <h5 th:text="${experience.dateTo}" />
+                            <b class="text-center" th:text="${experience.jobTitle}"/><br>
+                            <i>From:</i> <span th:text="${experience.dateFrom}" /><br>
+                            <i>To:</i> <span th:text="${experience.dateTo}" />
                         </div>
                     </div><!--//item-inner-->
                 </div><!--//item-->

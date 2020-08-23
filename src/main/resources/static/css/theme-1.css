@@ -10288,7 +10288,20 @@ hr {
 }
 
 .overview-section .item {
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+}
+
+.overview-section .item-header {
+    font-size: 0.75rem;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: white;
+    border-bottom: 7px solid rgba(230, 0, 255, 0.12);
+}
+
+.item-header-tabs {
+    font-size: 0.75em;
+    background-color: white;
 }
 
 .overview-section .item-desc {

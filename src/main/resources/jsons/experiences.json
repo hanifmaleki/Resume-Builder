@@ -1,8 +1,9 @@
 [
   {
     "dateFrom": "2018-07-01",
+    "dateTo": "2020-08-31",
     "leavingReason": "long distance",
-    "jobTitle": "Java Back-end Developer",
+    "jobTitle": "System Engineer",
     "company": {
       "title": "BearingPoint(RegTech)",
       "website": "https://www.reg.tech/en/",
@@ -80,7 +81,7 @@
     },
     "dateFrom": "2016-07-01",
     "dateTo": "2016-11-30",
-    "jobTitle": "Android Developer",
+    "jobTitle": "Android Front-End Developer",
     "leavingReason": "Development department were closed",
     "projects": [
       {
@@ -119,7 +120,7 @@
     },
     "dateFrom": "2014-08-01",
     "dateTo": "2015-10-31",
-    "jobTitle": "Java Developer",
+    "jobTitle": "Software Engineer",
     "leavingReason": "Migration to austria",
     "projects": [
       {
@@ -169,7 +170,7 @@
   {
     "dateFrom": "2013-01-21",
     "dateTo": "2014-07-31",
-    "jobTitle": "Java Developer",
+    "jobTitle": "Java Backend Developer",
     "company": {
       "title": "Eticke Parse Technology Development Co.",
       "website": "www.etick.ir",
