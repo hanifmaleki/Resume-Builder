@@ -143,54 +143,76 @@
         </div>
     </section><!--//about-me-section-->
 
-    <section id="experiences" class="overview-section p-3 p-lg-5">
+    <section class="testimonials-section p-3 p-lg-5">
         <div class="container">
-            <h2 class="section-title font-weight-bold mb-3">Experiences</h2>
+            <h2 class="section-title font-weight-bold mb-5">Experiences</h2>
             <div class="section-intro mb-5">I have more than 10 years' experience building software for clients all over
                 the world. Below is a quick overview of my main technical skill sets and technologies I use. Want to
                 find out more about my experience? Check out my <a href="resume.html">online resume</a> and <a
                         href="portfolio.html">project portfolio</a>.
             </div>
-            <div class="row">
-                <div class="item col-6 col-lg-6 border-light mb-4" th:each="experience: ${resume.experiences}" th:if="${experience.show==true}">
-                    <div class="item-header ">
-                        <div class="item-icon">
-                            <div th:if="${experience.company.icon != ''}">
-                                <img class="img-fluid" th:src="${experience.company.icon}"/>
+            <div class="testiomonial-carousel-container">
+                <div class="testimonial-carousel  tiny-slider">
+                    <div class="item" th:each="experience: ${resume.experiences}" th:if="${experience.show==true}">
+                        <div class="item-header">
+                            <div class="item-icon">
+                                <div th:if="${experience.company.icon != ''}">
+                                    <img class="img-fluid w-25" th:src="${experience.company.icon}"/>
+                                </div>
+                                <div th:if="${experience.company.icon == null}">
+                                    <i class="far fa-building"></i>
+                                </div>
                             </div>
-                            <div th:if="${experience.company.icon == null}">
-                                <i class="far fa-building"></i>
-                            </div>
+                            <h3 class="item-title">
+                                <a th:href="${experience.company.website}" th:text="${experience.company.title}"/>
+                                <span class="h6" th:text="${experience.company.city}">
+                            </h3>
                         </div>
-                        <h3 class="item-title">
-                            <a th:href="${experience.company.website}" th:text="${experience.company.title}"/>
-                            <span class="h6" th:text="${experience.company.city}">
-                        </h3>
-
-                        <ul class="nav nav-tabs card-header-tabs float-xs-left">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Date</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Technologies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Achievments</a>
-                            </li>
-                        </ul>
+                        <div class="item-inner">
+                            <div class="item-desc">
+                                <b class="text-center" th:text="${experience.jobTitle}"/><br>
+                                <i>From:</i> <span th:text="${#dates.format(experience.dateFrom, 'MMMMM yyyy')}"/><br>
+                                <i>To:</i> <span th:text="${#dates.format(experience.dateTo, 'MMMMM yyyy')}"/>
+                            </div>
+                            <br>
+                            <div class="item-desc">
+                                <h6>Projects</h6>
+                                <div th:each="project: ${experience.projects}">
+                                    <h7 data-toggle="tooltip" th:title="${project.description}" th:text="${project.title}"/>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="item-desc">
+                                <h6>Technologies</h6>
+                                <div th:each="technology: ${experience.technologies}">
+                                    <h7 th:text="${technology.title}"/>
+                                </div>
+                            </div>
+                            <div class="item-desc">
+                                <h6>Achievements</h6>
+                                <div th:each="achievement: ${experience.achievements}">
+                                    <h7 th:text="${achievement.title}"/>
+                                </div>
+                            </div>
+                        </div><!--//item-inner-->
                     </div>
-                    <div class="item-inner">
-                        <div class="item-desc">
-                            <b class="text-center" th:text="${experience.jobTitle}"/><br>
-                            <i>From:</i> <span th:text="${#dates.format(experience.dateFrom, 'MMMMM yyyy')}" /><br>
-                            <i>To:</i> <span th:text="${#dates.format(experience.dateTo, 'MMMMM yyyy')}" />
-                        </div>
-                    </div><!--//item-inner-->
-                </div><!--//item-->
 
+                    <!--                </div>&lt;!&ndash;//item&ndash;&gt;-->
+                </div><!--//testimonial-carousel-->
+            </div><!--//testimonial-carousel-container-->
+        </div><!--//container-->
+    </section><!--//testimonials-section-->
+
+    <section id="experiences" class="overview-section p-3 p-lg-5">
+        <div class="container">
+            <h2 class="section-title font-weight-bold mb-3">Skills</h2>
+            <div class="row">
+                <div class="item col-6 col-lg-3" th:each="skill : ${resume.skills}">
+                    <h6 th:text="${skill.title+ '(' + skill.group + ')'}"></h6>
+                    <div th:each="item : ${skill.skillItems}">
+                        <h7 th:text="${item.title}"/>
+                    </div>
+                </div>
                 <div class="item col-6 col-lg-3">
                     <div class="item-inner">
                         <div class="item-icon"><i class="fab fa-js-square"></i></div>
@@ -287,148 +309,6 @@
     <div class="container">
         <hr>
     </div>
-
-    <section class="testimonials-section p-3 p-lg-5">
-        <div class="container">
-            <h2 class="section-title font-weight-bold mb-5">Testimonials</h2>
-
-            <div class="testiomonial-carousel-container">
-                <div class="testimonial-carousel  tiny-slider">
-                    <div class="item">
-                        <div class="item-inner">
-                            <div class="quote-holder">
-                                <blockquote class="quote-content">
-                                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer
-                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis.
-                                </blockquote>
-                                <i class="fas fa-quote-left"></i>
-                            </div><!--//quote-holder-->
-                            <div class="source-holder">
-                                <div class="source-profile">
-                                    <!--                                    <img src="assets/images/clients/profile-1.png" alt="image"/>-->
-                                </div>
-                                <div class="meta">
-                                    <div class="name">Brandon James</div>
-                                    <div class="info">Project Manager, Google</div>
-                                </div>
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <div class="item-inner">
-                            <div class="quote-holder">
-                                <blockquote class="quote-content">
-                                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer
-                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis.
-                                </blockquote>
-                                <i class="fas fa-quote-left"></i>
-                            </div><!--//quote-holder-->
-                            <div class="source-holder">
-                                <div class="source-profile">
-                                    <!--                                    <img src="assets/images/clients/profile-2.png" alt="image"/>-->
-                                </div>
-                                <div class="meta">
-                                    <div class="name">Kate Sanders</div>
-                                    <div class="info">Project Manager, Uber</div>
-                                </div>
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <div class="item-inner">
-                            <div class="quote-holder">
-                                <blockquote class="quote-content">
-                                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer
-                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis.
-                                </blockquote>
-                                <i class="fas fa-quote-left"></i>
-                            </div><!--//quote-holder-->
-                            <div class="source-holder">
-                                <div class="source-profile">
-                                    <!--                                    <img src="assets/images/clients/profile-3.png" alt="image"/>-->
-                                </div>
-                                <div class="meta">
-                                    <div class="name">James Lee</div>
-                                    <div class="info">Product Manager, Amazon</div>
-                                </div>
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <div class="item-inner">
-                            <div class="quote-holder">
-                                <blockquote class="quote-content">
-                                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer
-                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis.
-                                </blockquote>
-                                <i class="fas fa-quote-left"></i>
-                            </div><!--//quote-holder-->
-                            <div class="source-holder">
-                                <div class="source-profile">
-                                    <!--                                    <img src="assets/images/clients/profile-4.png" alt="image"/>-->
-                                </div>
-                                <div class="meta">
-                                    <div class="name">James Lee</div>
-                                    <div class="info">Product Manager, Amazon</div>
-                                </div>
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <div class="item-inner">
-                            <div class="quote-holder">
-                                <blockquote class="quote-content">
-                                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer
-                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis.
-                                </blockquote>
-                                <i class="fas fa-quote-left"></i>
-                            </div><!--//quote-holder-->
-                            <div class="source-holder">
-                                <div class="source-profile">
-                                    <!--                                    <img src="assets/images/clients/profile-5.png" alt="image"/>-->
-                                </div>
-                                <div class="meta">
-                                    <div class="name">Olivia White</div>
-                                    <div class="info">Product Manager, Dropbox</div>
-                                </div>
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <div class="item-inner">
-                            <div class="quote-holder">
-                                <blockquote class="quote-content">
-                                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer
-                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                    penatibus et magnis.
-                                </blockquote>
-                                <i class="fas fa-quote-left"></i>
-                            </div><!--//quote-holder-->
-                            <div class="source-holder">
-                                <div class="source-profile">
-                                    <!--                                    <img src="assets/images/clients/profile-6.png" alt="image"/>-->
-                                </div>
-                                <div class="meta">
-                                    <div class="name">Samuel Reyes</div>
-                                    <div class="info">CTO, StartupHub</div>
-                                </div>
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-                </div><!--//testimonial-carousel-->
-            </div><!--//testimonial-carousel-container-->
-        </div><!--//container-->
-    </section><!--//testimonials-section-->
 
     <div class="container">
         <hr>
@@ -658,12 +538,12 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-<script src="https://github.com/ganlanyuan/tiny-slider/blob/master/dist/tiny-slider.js"></script>
-<!--<script src="assets/js/testimonials.js"></script>-->
+<script src="js/tiny-slider.js"></script>
+<script src="js/testimonials.js"></script>
 
 
 <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-<!--<script src="assets/js/demo/style-switcher.js"></script>-->
+<script src="js/style-switcher.js"></script>
 
 <!-- Dark Mode -->
 <script src="js/js-cookie.min.js"></script>
