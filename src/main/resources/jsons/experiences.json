@@ -1,5 +1,66 @@
 [
   {
+    "dateFrom": "2020-09-01",
+    "jobTitle": "System Engineer",
+    "company":{
+      "title": "ProLion GmbH",
+      "website": "https://prolion.com/",
+      "city": "Vienna Neustadt",
+      "description": "Storage Security",
+      "icon": "images/company/prolion.png"
+    },
+    "projects": [
+      {
+        "title": "PCS Cluster Management",
+        "description": "?",
+        "website": "?"
+      }
+    ],
+    "technologies": [
+      {
+        "title": "Java"
+      },
+      {
+        "title": "Build tool: Maven"
+      },
+      {
+        "title": "Version Control: Git (GitLab)"
+      },
+      {
+        "title": "Micro Service Architecture"
+      },
+      {
+        "title": "Devops: GitLab(Pipeline), Docker, Ansible, ..."
+      },
+      {
+        "title": "Spring : core, spring-boot, spring-batch"
+      },
+      {
+        "title": "Web/Application Server: Jetty"
+      },
+      {
+        "title": "Web Service: Spring Web Service, Swagger"
+      },
+      {
+        "title": "Testing: Junit, Mockito, Hamcrest"
+      },
+      {
+        "title": "Database: PostgresSQL, ElasticSearch, ArangoDB"
+      },
+      {
+        "title": "ORM: JPA (Hibernate Implementation)"
+      },
+      {
+        "title": "Messaging: RabitMQ"
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Working independently and being responsible for special micro services"
+      }
+    ]
+  },
+  {
     "dateFrom": "2018-07-01",
     "dateTo": "2020-08-31",
     "leavingReason": "long distance",
@@ -228,7 +289,7 @@
       "city": "Tehran",
       "website": "http://vaslab.ir",
       "description": "VASLAB is a research and development laboratory at Sharif University of technology specialize in the mobile value-added services. Sharif University is one of the best technical university in the Middle East.",
-      "icon": "images/company/vaslab.png"
+      "icon": "images/company/vaslab-2.png"
     },
     "projects": [
       {
@@ -311,7 +372,7 @@
     "city": "Tehran",
     "company": {
       "title": "Raj Samaneh Software Corporation",
-      "icon": "images/company/raj.gif"
+      "icon": "images/company/raj.png"
     },
     "projects": [
       {

@@ -9,5 +9,6 @@ public class Skill {
     private String group;
     private String title;
     private List<SkillItem> skillItems;
+    private String icon;
 
 }

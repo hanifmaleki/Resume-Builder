@@ -2,6 +2,7 @@
   {
     "group": "J2SE",
     "title": "Java2 Standard Edition",
+    "icon": "images/skills/j2se.svg",
     "skillItems": [
       {
         "title": "Core Language",
@@ -50,6 +51,7 @@
   {
     "group": "J2EE",
     "title": "Java2 Enterprise Edition",
+    "icon": "images/skills/Java-EE.png",
     "skillItems": [
       {
         "title": "ORM",
@@ -116,6 +118,7 @@
   {
     "group": "Spring",
     "title": "Spring Framework",
+    "icon": "images/skills/spring.png",
     "skillItems": [
       {
         "title": "Core(IoC & AOP)",
@@ -152,6 +155,7 @@
   {
     "group": "Scripting",
     "title": "JVM Based Languages",
+    "icon": "images/skills/groovy.png",
     "skillItems": [
       {
         "title": "Groovy",
@@ -170,6 +174,7 @@
   {
     "group": "Test",
     "title": "Tools & Frameworks",
+    "icon": "images/skills/junit5.png",
     "skillItems": [
       {
         "title": "JUnit",
@@ -180,14 +185,21 @@
       {
         "title": "Spock",
         "familiarity": "Good",
-        "experienceDuration": "1+ Year",
-        "last": "2020-01-01"
+        "experienceDuration": "2+ Year",
+        "last": "2020-08-31"
+      },
+      {
+        "title": "Mockito",
+        "familiarity": "Familiar",
+        "experienceDuration": "6+ Months",
+        "last": "2020-11-31"
       }
     ]
   },
   {
     "group": "DevOps",
     "title": "Continuous Integration & Continues Delivery",
+    "icon": "images/skills/devops.png",
     "skillItems": [
       {
         "title": "Fundamentals",
@@ -224,18 +236,25 @@
         "familiarity": "?",
         "experienceDuration": "?",
         "last": ""
+      },
+      {
+        "title": "Ansible",
+        "familiarity": "?",
+        "experienceDuration": "?",
+        "last": ""
       }
     ]
   },
   {
-    "group": "",
-    "title": "",
+    "group": "Database Systems and Data Engineering",
+    "title": "Database",
+    "icon": "images/skills/database.png",
     "skillItems": [
       {
-        "title": "",
-        "familiarity": "",
-        "experienceDuration": "",
-        "last": ""
+        "title": "ArangoDB",
+        "familiarity": "familiar",
+        "experienceDuration": "2+ Months",
+        "last": "2020-10-31"
       }
     ]
   }
