@@ -11539,3 +11539,8 @@ body {
 .config-panel .close .fa {
     color: #fff
 }
+
+.skill-icon {
+    height:48px;
+    margin:5px;
+}
