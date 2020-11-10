@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class PersonalInfo {
+public class PersonalInfo extends BaseResumeObject{
     private String title;
     private String name;
     private String family;

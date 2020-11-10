@@ -7,7 +7,7 @@ import java.util.List;
 
 
 @Data
-public class AcademicProject {
+public class AcademicProject extends BaseResumeObject{
     private String course;
     private String title;
     private Date date;

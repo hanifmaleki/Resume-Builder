@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-public class Experience {
+public class Experience extends BaseResumeObject{
     private Company company;
     private Date dateFrom;
     private Date dateTo;

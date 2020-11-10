@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class SkillItem {
+public class SkillItem extends BaseResumeObject{
     private String title;
     private String familiarity; //TODO Familiarity as enum => it needs renderer
     private String experienceDuration; //TODO Familiarity as enum => it needs renderer
