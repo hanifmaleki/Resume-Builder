@@ -1,10 +1,16 @@
 package mlk.hanif.resumeBuilder.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.util.Date;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
 public class PersonalInfo extends BaseResumeObject{
     private String title;
     private String name;

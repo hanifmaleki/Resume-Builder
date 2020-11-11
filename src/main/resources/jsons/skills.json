@@ -122,7 +122,7 @@
     "skillItems": [
       {
         "title": "Core(IoC & AOP)",
-        "familiarity": ")Good",
+        "familiarity": "Good",
         "experienceDuration": "2+ Years",
         "last": "2020-01-01"
       },
@@ -221,25 +221,25 @@
       },
       {
         "title": "AWS",
-        "familiarity": "?",
+        "familiarity": "Heard",
         "experienceDuration": "?",
         "last": ""
       },
       {
         "title": "OpenStack",
-        "familiarity": "?",
+        "familiarity": "Heard",
         "experienceDuration": "?",
         "last": ""
       },
       {
         "title": "Azure",
-        "familiarity": "?",
+        "familiarity": "Heard",
         "experienceDuration": "?",
         "last": ""
       },
       {
         "title": "Ansible",
-        "familiarity": "?",
+        "familiarity": "Heard",
         "experienceDuration": "?",
         "last": ""
       }
@@ -252,7 +252,7 @@
     "skillItems": [
       {
         "title": "ArangoDB",
-        "familiarity": "familiar",
+        "familiarity": "Basic",
         "experienceDuration": "2+ Months",
         "last": "2020-10-31"
       }

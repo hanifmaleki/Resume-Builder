@@ -1,12 +1,18 @@
 package mlk.hanif.resumeBuilder.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.util.Date;
 import java.util.List;
 
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
 public class AcademicProject extends BaseResumeObject{
     private String course;
     private String title;
